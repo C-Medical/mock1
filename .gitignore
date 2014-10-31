@@ -1,0 +1,9 @@
+*.identcache
+*.res
+*.exe
+*.dcu
+*.dproj.local
+__history
+Android
+Win32
+Win64
