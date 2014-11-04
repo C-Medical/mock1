@@ -6,19 +6,19 @@ Visible=True
 Coordinates=204,188,80,36
 
 [Label1]
-Coordinates=310,190,46,51
+Coordinates=430,100,46,51
 
 [Button1]
-Coordinates=340,20,53,51
+Coordinates=430,30,53,51
 
 [Panel1]
-Coordinates=138,188,47,33
+Coordinates=430,170,47,33
 
 [Panel2]
-Coordinates=73,188,47,33
+Coordinates=490,170,47,33
 
 [Label2]
-Coordinates=10,188,46,51
+Coordinates=490,100,46,51
 
 [PrototypeBindSource1]
 Coordinates=200,10,125,105
@@ -30,15 +30,21 @@ Coordinates=203,188,87,33
 [BindingsList1]
 Coordinates=136,131,91,36
 
-[Button2]
-Coordinates=118,1,53,51
-
 [Panel3]
-Coordinates=118,89,47,33
+Coordinates=550,170,47,33
 
 [Layout1]
-Coordinates=276,1,53,33
+Coordinates=430,-10,53,33
 
 [CmMockDataSource1]
-Coordinates=118,1,120,105
+Coordinates=200,10,120,141
+Visible=True
+
+[Module Settings]
+ModelLayerNames=
+ActiveLayerNames=
+EditingLayerName=
+
+[btnStart]
+Coordinates=500,30,53,51
 

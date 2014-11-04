@@ -1,0 +1,169 @@
+object frmStart: TfrmStart
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 640
+  ClientWidth = 400
+  StyleBook = StyleBook1
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Layout1: TLayout
+    Align = Client
+    Size.Width = 400.000000000000000000
+    Size.Height = 640.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    object Panel1: TPanel
+      Align = Top
+      Size.Width = 400.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'panelBlack'
+      TabOrder = 0
+      object lblTitle: TLabel
+        Align = Client
+        StyledSettings = [Family]
+        Size.Width = 400.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'Label1Style1'
+        TextSettings.Font.Size = 24.000000000000000000
+        TextSettings.Font.Style = [fsBold]
+        TextSettings.FontColor = claWhite
+        TextSettings.HorzAlign = Center
+        Text = 'Works'#30149#38498
+      end
+    end
+    object Panel3: TPanel
+      Align = Bottom
+      Position.Y = 576.000000000000000000
+      Size.Width = 400.000000000000000000
+      Size.Height = 64.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+    end
+    object Panel2: TPanel
+      Align = Client
+      Size.Width = 400.000000000000000000
+      Size.Height = 543.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      object FlowLayout1: TFlowLayout
+        Align = Client
+        Margins.Left = 40.000000000000000000
+        Margins.Top = 40.000000000000000000
+        Margins.Right = 40.000000000000000000
+        Margins.Bottom = 20.000000000000000000
+        Size.Width = 320.000000000000000000
+        Size.Height = 483.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Justify = Left
+        JustifyLastLine = Left
+        FlowDirection = LeftToRight
+        VerticalGap = 10.000000000000000000
+        object Label1: TLabel
+          Size.Width = 120.000000000000000000
+          Size.Height = 27.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'labelItemTitle'
+          TextSettings.WordWrap = False
+          Text = #21463#20184#30058#21495
+        end
+        object Label2: TLabel
+          Position.X = 120.000000000000000000
+          Size.Width = 200.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'labelItemValue'
+          TextSettings.WordWrap = False
+          Text = 'Label2'
+        end
+        object FlowLayoutBreak1: TFlowLayoutBreak
+          ChangesRules = False
+          Justify = Left
+          JustifyLastLine = Left
+          FlowDirection = LeftToRight
+        end
+        object Label3: TLabel
+          Position.Y = 40.000000000000000000
+          Size.Width = 120.000000000000000000
+          Size.Height = 27.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'labelItemTitle'
+          TextSettings.WordWrap = False
+          Text = #24739#32773#21517
+        end
+        object Label4: TLabel
+          Position.X = 120.000000000000000000
+          Position.Y = 40.000000000000000000
+          Size.Width = 200.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'labelItemValue'
+          TextSettings.WordWrap = False
+          Text = 'Label2'
+        end
+        object FlowLayoutBreak2: TFlowLayoutBreak
+          ChangesRules = False
+          Justify = Left
+          JustifyLastLine = Left
+          FlowDirection = LeftToRight
+        end
+        object Label5: TLabel
+          Position.Y = 80.000000000000000000
+          Size.Width = 120.000000000000000000
+          Size.Height = 27.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'labelItemTitle'
+          TextSettings.WordWrap = False
+          Text = #24615#21029
+        end
+        object Label6: TLabel
+          Position.X = 120.000000000000000000
+          Position.Y = 80.000000000000000000
+          Size.Width = 200.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'labelItemValue'
+          TextSettings.WordWrap = False
+          Text = 'Label2'
+        end
+      end
+    end
+  end
+  object StyleBook1: TStyleBook
+    Left = 16
+    ResourcesBin = {
+      464D585F5354594C4520322E3501060E6C6162656C4974656D5469746C650369
+      01060E6C6162656C4974656D56616C756503D801005450463007544C61796F75
+      7400095374796C654E616D65060E6C6162656C4974656D5469746C650A506F73
+      6974696F6E2E580500000000000000D407400A506F736974696F6E2E59050000
+      0000000000AA07400A53697A652E57696474680500000000000000F005400B53
+      697A652E4865696768740500000000000000C003401453697A652E506C617466
+      6F726D44656661756C74080756697369626C6508085461624F72646572020000
+      05545465787400095374796C654E616D6506047465787405416C69676E070643
+      6C69656E74064C6F636B6564090748697454657374080A53697A652E57696474
+      680500000000000000F005400B53697A652E4865696768740500000000000000
+      C003401453697A652E506C6174666F726D44656661756C740816546578745365
+      7474696E67732E466F6E742E53697A650500000000000000A003401654657874
+      53657474696E67732E466F6E74436F6C6F720707636C614E6176790000005450
+      463007544C61796F757400095374796C654E616D65060E6C6162656C4974656D
+      56616C75650A506F736974696F6E2E580500000000000000D407400A506F7369
+      74696F6E2E590500000000000000AA07400A53697A652E576964746805000000
+      00000000F005400B53697A652E48656967687405000000000000008803401453
+      697A652E506C6174666F726D44656661756C7408085461624F72646572020100
+      05545465787400095374796C654E616D6506047465787405416C69676E070643
+      6C69656E74064C6F636B6564090748697454657374080A53697A652E57696474
+      680500000000000000F005400B53697A652E4865696768740500000000000000
+      8803401453697A652E506C6174666F726D44656661756C740816546578745365
+      7474696E67732E466F6E742E53697A650500000000000000B0034000000A5452
+      656374616E676C6500095374796C654E616D65060E72656374616E676C657374
+      796C6505416C69676E0706436C69656E740946696C6C2E4B696E6407044E6F6E
+      650553696465730B06426F74746F6D000A53697A652E57696474680500000000
+      000000F005400B53697A652E4865696768740500000000000000880340145369
+      7A652E506C6174666F726D44656661756C7408000000}
+  end
+end

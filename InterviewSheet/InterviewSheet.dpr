@@ -3,12 +3,14 @@ program InterviewSheet;
 uses
   System.StartUpCopy,
   FMX.Forms,
-  uReady in 'uReady.pas' {Form1};
+  uReady in 'uReady.pas' {frmReady},
+  uStart in 'uStart.pas' {frmStart};
 
 {$R *.res}
 
 begin
   Application.Initialize;
-  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TfrmReady, frmReady);
+  Application.CreateForm(TfrmStart, frmStart);
   Application.Run;
 end.

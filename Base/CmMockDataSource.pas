@@ -4,7 +4,7 @@ interface
 
 uses
   System.SysUtils, System.Classes, Data.Bind.Components, Data.Bind.ObjectScope,
-  System.Generics.Collections, FMX.Dialogs;
+  System.Generics.Collections, System.Math;
 
 type
   TCmMockDataSource = class(TPrototypeBindSource)
@@ -25,6 +25,16 @@ type
   end;
 
   TCmPatientNameGenerator = class(TDelegateValueGenerator)
+  protected
+    function CreateDelegate: TValueGeneratorDelegate; override;
+  end;
+
+  TCmAgeGenerator = class(TDelegateValueGenerator)
+  protected
+    function CreateDelegate: TValueGeneratorDelegate; override;
+  end;
+
+  TCmSexGenerator = class(TDelegateValueGenerator)
   protected
     function CreateDelegate: TValueGeneratorDelegate; override;
   end;
@@ -101,13 +111,45 @@ begin
   if FieldType <> ftString then Exit;
   Result := TTypedListValueGeneratorDelegate<String>.Create([optRepeat], VALUES);
 end;
+
+{ TCmAgeGenerator }
+
+function TCmAgeGenerator.CreateDelegate: TValueGeneratorDelegate;
+var
+  i: Integer;
+  values: TArray<String>;
+begin
+  Result := nil;
+  if FieldType <> ftString then Exit;
+
+  SetLength(values, 30);
+  for i := 1 to 30 do
+  begin
+    values[i-1] := IntToStr(RandomRange(0, 99)) + ' çŒ';
+  end;
+  Result := TTypedListValueGeneratorDelegate<String>.Create([optRepeat], values);
+end;
+
+{ TCmSexGenerator }
+
+function TCmSexGenerator.CreateDelegate: TValueGeneratorDelegate;
+begin
+  Result := TTypedListValueGeneratorDelegate<String>.Create([optRepeat], ['íjê´', 'èóê´']);
+end;
+
 initialization
   RegisterValueGenerator('Cm-ReceiptNumber', [ftString],
     TValueGeneratorDescription.Create(TCmReceiptNumberGenerator));
   RegisterValueGenerator('Cm-PatientName', [ftString],
     TValueGeneratorDescription.Create(TCmPatientNameGenerator));
+  RegisterValueGenerator('Cm-Age', [ftString],
+    TValueGeneratorDescription.Create(TCmAgeGenerator));
+  RegisterValueGenerator('Cm-Sex', [ftString],
+    TValueGeneratorDescription.Create(TCmAgeGenerator));
 finalization
   UnRegisterValueGenerator('Cm-ReceiptNumber', [ftString], '');
   UnRegisterValueGenerator('Cm-PatientName', [ftString], '');
+  UnRegisterValueGenerator('Cm-Age', [ftString], '');
+  UnRegisterValueGenerator('Cm-Sex', [ftString], '');
 
 end.

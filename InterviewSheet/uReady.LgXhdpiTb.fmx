@@ -1,10 +1,8 @@
-inherited Form1_LgXhdpiTb: TForm1_LgXhdpiTb
+inherited frmReady_LgXhdpiTb: TfrmReady_LgXhdpiTb
   ClientHeight = 829
   ClientWidth = 480
   DesignerMasterStyle = 3
-  inherited ScaledLayout1: TScaledLayout
-    OriginalWidth = 480.000000000000000000
-    OriginalHeight = 829.000000000000000000
+  inherited Layout1: TLayout
     Size.Width = 480.000000000000000000
     Size.Height = 829.000000000000000000
     inherited Panel1: TPanel
@@ -14,21 +12,24 @@ inherited Form1_LgXhdpiTb: TForm1_LgXhdpiTb
       end
     end
     inherited Panel2: TPanel
-      Size.Width = 400.000000000000000000
-      Size.Height = 660.000000000000000000
+      Size.Width = 432.000000000000000000
+      Size.Height = 652.000000000000000000
       inherited Label2: TLabel
-        Size.Width = 392.000000000000000000
+        Size.Width = 424.000000000000000000
+        inherited Button1: TButton
+          Position.X = 368.000000000000000000
+        end
       end
       inherited ListView1: TListView
-        Size.Width = 392.000000000000000000
-        Size.Height = 599.000000000000000000
+        Size.Width = 424.000000000000000000
+        Size.Height = 591.000000000000000000
       end
     end
     inherited Panel3: TPanel
-      Position.Y = 773.000000000000000000
+      Position.Y = 765.000000000000000000
       Size.Width = 480.000000000000000000
-      inherited Button2: TButton
-        TabOrder = 1
+      inherited btnStart: TButton
+        Position.X = 360.000000000000000000
       end
     end
   end

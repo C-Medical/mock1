@@ -11,7 +11,7 @@ uses
   Data.Bind.ObjectScope, CmMockDataSource;
 
 type
-  TForm1 = class(TForm)
+  TfrmReady = class(TForm)
     StyleBook1: TStyleBook;
     Panel1: TPanel;
     Label1: TLabel;
@@ -20,7 +20,7 @@ type
     ListView1: TListView;
     Button1: TButton;
     BindingsList1: TBindingsList;
-    Button2: TButton;
+    btnStart: TButton;
     Panel3: TPanel;
     Layout1: TLayout;
     CmMockDataSource1: TCmMockDataSource;
@@ -33,13 +33,14 @@ type
   end;
 
 var
-  Form1: TForm1;
+  frmReady: TfrmReady;
 
 implementation
 
 {$R *.fmx}
+{$R *.LgXhdpiTb.fmx ANDROID}
 
-procedure TForm1.Button1Click(Sender: TObject);
+procedure TfrmReady.Button1Click(Sender: TObject);
 begin
   //PrototypeBindSource1.Refresh;
 end;
