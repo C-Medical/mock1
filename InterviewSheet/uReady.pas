@@ -8,7 +8,7 @@ uses
   FMX.Layouts, FMX.StdCtrls, FMX.ListView.Types, FMX.ListView,
   Data.Bind.GenData, Data.Bind.EngExt, Fmx.Bind.DBEngExt, System.Rtti,
   System.Bindings.Outputs, Fmx.Bind.Editors, Data.Bind.Components,
-  Data.Bind.ObjectScope;
+  Data.Bind.ObjectScope, CmMockDataSource;
 
 type
   TForm1 = class(TForm)
@@ -19,12 +19,12 @@ type
     Label2: TLabel;
     ListView1: TListView;
     Button1: TButton;
-    PrototypeBindSource1: TPrototypeBindSource;
     BindingsList1: TBindingsList;
-    LinkFillControlToField1: TLinkFillControlToField;
     Button2: TButton;
     Panel3: TPanel;
     Layout1: TLayout;
+    CmMockDataSource1: TCmMockDataSource;
+    LinkFillControlToField1: TLinkFillControlToField;
     procedure Button1Click(Sender: TObject);
   private
     { private êÈåæ }
@@ -41,7 +41,7 @@ implementation
 
 procedure TForm1.Button1Click(Sender: TObject);
 begin
-  PrototypeBindSource1.Refresh;
+  //PrototypeBindSource1.Refresh;
 end;
 
 end.
