@@ -13,7 +13,7 @@ inherited frmReady_LgXhdpiTb: TfrmReady_LgXhdpiTb
     end
     inherited Panel2: TPanel
       Size.Width = 432.000000000000000000
-      Size.Height = 652.000000000000000000
+      Size.Height = 696.000000000000000000
       inherited Label2: TLabel
         Size.Width = 424.000000000000000000
         inherited Button1: TButton
@@ -22,14 +22,10 @@ inherited frmReady_LgXhdpiTb: TfrmReady_LgXhdpiTb
       end
       inherited ListView1: TListView
         Size.Width = 424.000000000000000000
-        Size.Height = 591.000000000000000000
-      end
-    end
-    inherited Panel3: TPanel
-      Position.Y = 765.000000000000000000
-      Size.Width = 480.000000000000000000
-      inherited btnStart: TButton
-        Position.X = 360.000000000000000000
+        Size.Height = 635.000000000000000000
+        ItemAppearanceObjects.ItemObjects.Detail.PlaceOffset.Y = 5.000000000000000000
+        ItemAppearanceObjects.ItemObjects.Accessory.AccessoryType = Detail
+        ItemAppearanceObjects.ItemObjects.Accessory.VertAlign = Trailing
       end
     end
   end

@@ -145,7 +145,7 @@ initialization
   RegisterValueGenerator('Cm-Age', [ftString],
     TValueGeneratorDescription.Create(TCmAgeGenerator));
   RegisterValueGenerator('Cm-Sex', [ftString],
-    TValueGeneratorDescription.Create(TCmAgeGenerator));
+    TValueGeneratorDescription.Create(TCmSexGenerator));
 finalization
   UnRegisterValueGenerator('Cm-ReceiptNumber', [ftString], '');
   UnRegisterValueGenerator('Cm-PatientName', [ftString], '');

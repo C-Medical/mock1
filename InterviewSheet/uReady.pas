@@ -20,12 +20,12 @@ type
     ListView1: TListView;
     Button1: TButton;
     BindingsList1: TBindingsList;
-    btnStart: TButton;
-    Panel3: TPanel;
     Layout1: TLayout;
     CmMockDataSource1: TCmMockDataSource;
     LinkFillControlToField1: TLinkFillControlToField;
     procedure Button1Click(Sender: TObject);
+    procedure ListView1ItemClick(const Sender: TObject;
+      const AItem: TListViewItem);
   private
     { private êÈåæ }
   public
@@ -37,12 +37,31 @@ var
 
 implementation
 
+uses
+  uStart;
+
 {$R *.fmx}
 {$R *.LgXhdpiTb.fmx ANDROID}
 
 procedure TfrmReady.Button1Click(Sender: TObject);
 begin
   //PrototypeBindSource1.Refresh;
+end;
+
+procedure TfrmReady.ListView1ItemClick(const Sender: TObject;
+  const AItem: TListViewItem);
+var
+  dlg: TfrmStart;
+begin
+  dlg := TfrmStart.Create(Self);
+  dlg.ShowModal(procedure(ModalResult: TModalResult)
+  begin
+    if ModalResult = mrOk then
+    begin
+
+    end;
+    dlg.DisposeOf;
+  end);
 end;
 
 end.

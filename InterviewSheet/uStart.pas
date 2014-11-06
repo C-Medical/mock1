@@ -5,7 +5,9 @@ interface
 uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.Layouts,
-  FMX.StdCtrls;
+  FMX.StdCtrls, Data.Bind.GenData, Data.Bind.EngExt, Fmx.Bind.DBEngExt,
+  System.Rtti, System.Bindings.Outputs, Fmx.Bind.Editors, Data.Bind.Components,
+  Data.Bind.ObjectScope, CmMockDataSource, FMX.ListBox;
 
 type
   TfrmStart = class(TForm)
@@ -17,13 +19,33 @@ type
     FlowLayout1: TFlowLayout;
     Label1: TLabel;
     StyleBook1: TStyleBook;
-    Label2: TLabel;
+    lblReceiptNo: TLabel;
     FlowLayoutBreak1: TFlowLayoutBreak;
     Label3: TLabel;
-    Label4: TLabel;
+    lblPatientName: TLabel;
     FlowLayoutBreak2: TFlowLayoutBreak;
     Label5: TLabel;
-    Label6: TLabel;
+    lblSex: TLabel;
+    FlowLayoutBreak3: TFlowLayoutBreak;
+    Label7: TLabel;
+    lblAge: TLabel;
+    FlowLayoutBreak4: TFlowLayoutBreak;
+    Label9: TLabel;
+    lblReceiptDateTime: TLabel;
+    CmMockDataSource1: TCmMockDataSource;
+    BindingsList1: TBindingsList;
+    LinkPropertyToFieldText: TLinkPropertyToField;
+    LinkPropertyToFieldText2: TLinkPropertyToField;
+    LinkPropertyToFieldText3: TLinkPropertyToField;
+    LinkPropertyToFieldText5: TLinkPropertyToField;
+    LinkPropertyToFieldText4: TLinkPropertyToField;
+    ListBox1: TListBox;
+    Label2: TLabel;
+    ListBoxItem1: TListBoxItem;
+    ListBoxItem2: TListBoxItem;
+    ListBoxItem3: TListBoxItem;
+    btnStart: TButton;
+    procedure btnStartClick(Sender: TObject);
   private
     { private êÈåæ }
   public
@@ -35,6 +57,24 @@ var
 
 implementation
 
+uses
+  uPasswd;
+
 {$R *.fmx}
+
+procedure TfrmStart.btnStartClick(Sender: TObject);
+var
+  dlg: TfrmPasswd;
+begin
+  dlg := TfrmPasswd.Create(Self);
+  dlg.ShowModal(procedure(ModalResult: TModalResult)
+  begin
+    if ModalResult = mrOk then
+    begin
+
+    end;
+    dlg.DisposeOf;
+  end);
+end;
 
 end.

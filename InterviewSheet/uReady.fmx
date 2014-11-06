@@ -33,7 +33,7 @@ object frmReady: TfrmReady
         TextSettings.Font.Style = [fsBold]
         TextSettings.FontColor = claWhite
         TextSettings.HorzAlign = Center
-        Text = 'Works'#30149#38498
+        Text = 'Works'#30149#38498#12288#9675#215#31185
       end
     end
     object Panel2: TPanel
@@ -45,9 +45,9 @@ object frmReady: TfrmReady
       Margins.Left = 24.000000000000000000
       Margins.Top = 40.000000000000000000
       Margins.Right = 24.000000000000000000
-      Margins.Bottom = 40.000000000000000000
+      Margins.Bottom = 60.000000000000000000
       Size.Width = 352.000000000000000000
-      Size.Height = 463.000000000000000000
+      Size.Height = 507.000000000000000000
       Size.PlatformDefault = False
       StyleLookup = 'panelContents'
       TabOrder = 1
@@ -81,41 +81,23 @@ object frmReady: TfrmReady
         FooterAppearanceClassName = 'TListHeaderObjects'
         Align = Client
         Size.Width = 344.000000000000000000
-        Size.Height = 402.000000000000000000
+        Size.Height = 446.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 1
         ItemAppearanceObjects.ItemObjects.Text.Font.Size = 20.000000000000000000
+        ItemAppearanceObjects.ItemObjects.Text.PlaceOffset.X = 40.000000000000000000
         ItemAppearanceObjects.ItemObjects.Detail.TextAlign = Trailing
         ItemAppearanceObjects.ItemObjects.Detail.Align = Trailing
         ItemAppearanceObjects.ItemObjects.Detail.Visible = True
+        ItemAppearanceObjects.ItemObjects.Accessory.Align = Leading
+        ItemAppearanceObjects.ItemObjects.Accessory.Visible = True
         ItemAppearanceObjects.ItemObjects.TextButton.Font.Size = 24.000000000000000000
         ItemAppearanceObjects.HeaderObjects.Text.Font.Style = [fsBold]
         ItemAppearanceObjects.HeaderObjects.Text.TextColor = claNavy
         ItemAppearanceObjects.FooterObjects.Text.TextColor = claTeal
         ItemAppearanceObjects.FooterObjects.Text.Width = 100.000000000000000000
         StyleLookup = 'ListView1Style1'
-      end
-    end
-    object Panel3: TPanel
-      Align = Bottom
-      Position.Y = 576.000000000000000000
-      Size.Width = 400.000000000000000000
-      Size.Height = 64.000000000000000000
-      Size.PlatformDefault = False
-      TabOrder = 2
-      object btnStart: TButton
-        Anchors = [akRight, akBottom]
-        StyledSettings = [Family]
-        Position.X = 232.000000000000000000
-        Position.Y = 12.000000000000000000
-        Size.Width = 153.000000000000000000
-        Size.Height = 44.000000000000000000
-        Size.PlatformDefault = False
-        TabOrder = 0
-        Text = #21839#35386#38283#22987
-        TextSettings.Font.Size = 24.000000000000000000
-        TextSettings.Font.Style = [fsBold]
-        TextSettings.FontColor = claNavy
+        OnItemClick = ListView1ItemClick
       end
     end
   end
