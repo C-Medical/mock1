@@ -26,6 +26,7 @@ type
     procedure Button1Click(Sender: TObject);
     procedure ListView1ItemClick(const Sender: TObject;
       const AItem: TListViewItem);
+    procedure FormCreate(Sender: TObject);
   private
     { private êÈåæ }
   public
@@ -38,15 +39,31 @@ var
 implementation
 
 uses
+  FMX.Styles,
   uStart;
 
 {$R *.fmx}
 {$R *.LgXhdpiTb.fmx ANDROID}
 
+procedure TfrmReady.FormCreate(Sender: TObject);
+var
+  style: TFmxObject;
+begin
+  {$IFDEF MSWINDOWS}
+  style := TStyleStreaming.LoadFromResource(HInstance, 'Windows', RT_RCDATA);
+  {$ENDIF}
+  {$IFDEF Android}
+  style := TStyleStreaming.LoadFromResource(HInstance, 'Android', RT_RCDATA);
+  {$ENDIF}
+  if Style<> nil then
+  TStyleManager.SetStyle(Style);
+end;
+
 procedure TfrmReady.Button1Click(Sender: TObject);
 begin
   //PrototypeBindSource1.Refresh;
 end;
+
 
 procedure TfrmReady.ListView1ItemClick(const Sender: TObject;
   const AItem: TListViewItem);

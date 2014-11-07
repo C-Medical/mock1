@@ -1,5 +1,11 @@
 program InterviewSheet;
 
+
+
+
+
+{$R *.dres}
+
 uses
   System.StartUpCopy,
   FMX.Forms,
@@ -14,3 +20,5 @@ begin
   Application.CreateForm(TfrmReady, frmReady);
   Application.Run;
 end.
+
+
