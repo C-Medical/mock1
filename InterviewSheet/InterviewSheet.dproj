@@ -6,7 +6,7 @@
         <MainSource>InterviewSheet.dpr</MainSource>
         <Base>True</Base>
         <Config Condition="'$(Config)'==''">Debug</Config>
-        <Platform Condition="'$(Platform)'==''">Android</Platform>
+        <Platform Condition="'$(Platform)'==''">Win32</Platform>
         <TargetedPlatforms>95</TargetedPlatforms>
         <AppType>Application</AppType>
     </PropertyGroup>
@@ -228,12 +228,22 @@
         <RcItem Include="..\Styles\Android\AndroidDark.fsf">
             <ContainerId>ResourceItem</ContainerId>
             <ResourceType>RCDATA</ResourceType>
-            <ResourceId>Android</ResourceId>
+            <ResourceId>AndroidDak</ResourceId>
         </RcItem>
         <RcItem Include="..\Styles\Dark.style">
             <ContainerId>ResourceItem</ContainerId>
             <ResourceType>RCDATA</ResourceType>
-            <ResourceId>Windows</ResourceId>
+            <ResourceId>WinDark</ResourceId>
+        </RcItem>
+        <RcItem Include="..\Styles\Android\AndroidLight.fsf">
+            <ContainerId>ResourceItem</ContainerId>
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>AndroidLight</ResourceId>
+        </RcItem>
+        <RcItem Include="..\Styles\Light.Style">
+            <ContainerId>ResourceItem</ContainerId>
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>WinLight</ResourceId>
         </RcItem>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
@@ -341,6 +351,12 @@
                 <DeployFile LocalName="$(BDS)\bin\Artwork\Appmethod\Android\FM_LauncherIcon_72x72.png" Configuration="Debug" Class="Android_LauncherIcon72">
                     <Platform Name="Android">
                         <RemoteName>ic_launcher.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="..\Styles\Light.Style" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>

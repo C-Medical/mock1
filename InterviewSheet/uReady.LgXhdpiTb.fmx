@@ -9,11 +9,13 @@ inherited frmReady_LgXhdpiTb: TfrmReady_LgXhdpiTb
       Size.Width = 480.000000000000000000
       inherited Label1: TLabel
         Size.Width = 480.000000000000000000
+        StyleLookup = 'valuelabelstyle'
       end
     end
     inherited Panel2: TPanel
       Size.Width = 432.000000000000000000
       Size.Height = 696.000000000000000000
+      StyleLookup = 'panelContents'
       inherited Label2: TLabel
         Size.Width = 424.000000000000000000
         inherited Button1: TButton

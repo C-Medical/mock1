@@ -29,7 +29,6 @@ object frmReady: TfrmReady
         Size.Width = 400.000000000000000000
         Size.Height = 33.000000000000000000
         Size.PlatformDefault = False
-        StyleLookup = 'Label1Style1'
         TextSettings.Font.Size = 24.000000000000000000
         TextSettings.Font.Style = [fsBold]
         TextSettings.HorzAlign = Center
@@ -49,7 +48,6 @@ object frmReady: TfrmReady
       Size.Width = 352.000000000000000000
       Size.Height = 507.000000000000000000
       Size.PlatformDefault = False
-      StyleLookup = 'panelContents'
       TabOrder = 1
       object Label2: TLabel
         Align = Top

@@ -1,7 +1,7 @@
 object frmPasswd: TfrmPasswd
   Left = 0
   Top = 0
-  BorderStyle = ToolWindow
+  BorderStyle = None
   Caption = 'Form1'
   ClientHeight = 640
   ClientWidth = 400
@@ -17,11 +17,19 @@ object frmPasswd: TfrmPasswd
     Size.Height = 640.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 5
+    object Rectangle1: TRectangle
+      Align = Client
+      Fill.Kind = None
+      Size.Width = 400.000000000000000000
+      Size.Height = 640.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Thickness = 2.000000000000000000
+    end
     object FlowLayout1: TFlowLayout
       Align = Client
-      Margins.Top = 20.000000000000000000
+      Margins.Top = 40.000000000000000000
       Size.Width = 400.000000000000000000
-      Size.Height = 587.000000000000000000
+      Size.Height = 600.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 0
       Justify = Center
@@ -295,27 +303,6 @@ object frmPasswd: TfrmPasswd
         TextSettings.Font.Size = 24.000000000000000000
         TextSettings.Font.Style = [fsBold]
         TextSettings.FontColor = claNavy
-      end
-    end
-    object Panel1: TPanel
-      Align = Top
-      Size.Width = 400.000000000000000000
-      Size.Height = 33.000000000000000000
-      Size.PlatformDefault = False
-      StyleLookup = 'panelBlack'
-      TabOrder = 1
-      object Label1: TLabel
-        Align = Client
-        StyledSettings = [Family]
-        Size.Width = 400.000000000000000000
-        Size.Height = 33.000000000000000000
-        Size.PlatformDefault = False
-        StyleLookup = 'Label1Style1'
-        TextSettings.Font.Size = 24.000000000000000000
-        TextSettings.Font.Style = [fsBold]
-        TextSettings.FontColor = claWhite
-        TextSettings.HorzAlign = Center
-        Text = 'Works'#30149#38498#12288#9675#215#31185
       end
     end
   end

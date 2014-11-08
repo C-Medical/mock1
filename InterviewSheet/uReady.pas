@@ -50,10 +50,10 @@ var
   style: TFmxObject;
 begin
   {$IFDEF MSWINDOWS}
-  style := TStyleStreaming.LoadFromResource(HInstance, 'Windows', RT_RCDATA);
+  style := TStyleStreaming.LoadFromResource(HInstance, 'WinLight', RT_RCDATA);
   {$ENDIF}
   {$IFDEF Android}
-  style := TStyleStreaming.LoadFromResource(HInstance, 'Android', RT_RCDATA);
+  style := TStyleStreaming.LoadFromResource(HInstance, 'AndroidLight', RT_RCDATA);
   {$ENDIF}
   if Style<> nil then
   TStyleManager.SetStyle(Style);

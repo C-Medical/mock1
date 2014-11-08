@@ -5,13 +5,12 @@ interface
 uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.StdCtrls,
-  FMX.Layouts, FMX.Controls.Presentation, FMX.Edit, System.Actions, FMX.ActnList;
+  FMX.Layouts, FMX.Controls.Presentation, FMX.Edit, System.Actions, FMX.ActnList,
+  FMX.Objects;
 
 type
   TfrmPasswd = class(TForm)
     Layout1: TLayout;
-    Panel1: TPanel;
-    Label1: TLabel;
     FlowLayout1: TFlowLayout;
     Label2: TLabel;
     FlowLayoutBreak1: TFlowLayoutBreak;
@@ -34,6 +33,7 @@ type
     Button11: TButton;
     FlowLayoutBreak3: TFlowLayoutBreak;
     Edit1: TEdit;
+    Rectangle1: TRectangle;
     procedure Action1Execute(Sender: TObject);
     procedure Button11Click(Sender: TObject);
   private
