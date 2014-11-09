@@ -5,7 +5,7 @@ interface
 uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
   FMX.Types, FMX.Graphics, FMX.Controls, FMX.Forms, FMX.Dialogs, FMX.StdCtrls,
-  MainFormBase, FMX.Layouts, FMX.MultiView, FMX.ListBox;
+  MainFormBase, FMX.Layouts, FMX.MultiView, FMX.ListBox, FMX.Objects;
 
 type
   TfrmSearchHospital = class(TfrmMainBase)
@@ -31,15 +31,13 @@ implementation
 {$R *.fmx}
 
 uses
-  SearchResult;
+  MGFormFactory;
 
 procedure TfrmSearchHospital.btnSearchClick(Sender: TObject);
 begin
   inherited;
 //
-  if not Assigned(frmSearchResults) then
-    frmSearchResults := TfrmSearchResults.Create(Application);
-  frmSearchResults.Show;
+  g_FormFactory.Open_HospitalListDialog();
 end;
 
 end.

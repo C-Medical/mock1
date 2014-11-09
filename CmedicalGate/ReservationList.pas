@@ -5,7 +5,7 @@ interface
 uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants, 
   FMX.Types, FMX.Graphics, FMX.Controls, FMX.Forms, FMX.Dialogs, FMX.StdCtrls,
-  MainFormBase, FMX.Layouts, FMX.MultiView, FMX.ListBox;
+  MainFormBase, FMX.Layouts, FMX.MultiView, FMX.ListBox, FMX.Objects;
 
 type
   TfrmReservationList = class(TfrmMainBase)
@@ -31,7 +31,7 @@ implementation
 {$R *.fmx}
 
 uses
-  MainForm, ReservationDetails;
+  MainForm, MGFormFactory;
 
 procedure TfrmReservationList.btnHideMultiViewClick(Sender: TObject);
 begin
@@ -44,10 +44,7 @@ procedure TfrmReservationList.lbxReservationListItemClick(
 begin
   inherited;
   //
-  if not Assigned(frmReservationDetails) then
-    frmReservationDetails := TfrmReservationDetails.Create(Application);
-
-  frmReservationDetails.Show;
+  g_FormFactory.Open_ReservationDetails;
 end;
 
 end.

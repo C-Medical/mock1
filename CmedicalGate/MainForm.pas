@@ -9,7 +9,6 @@ uses
 
 type
   TfrmMain = class(TfrmMainBase)
-    Image1: TImage;
     lbxTopMain: TListBox;
     listItemQueryReservation: TListBoxItem;
     ListBoxGroupHeader1: TListBoxGroupHeader;
@@ -33,7 +32,7 @@ implementation
 {$R *.fmx}
 
 uses
-  SearchHospital, ReservationDetails;
+  MGFormFactory, ReservationDetails, SearchHospital;
 
 procedure TfrmMain.lbxTopMainItemClick(const Sender: TCustomListBox;
   const Item: TListBoxItem);
@@ -42,16 +41,12 @@ begin
 
   if (item = listItemQueryReservation) then
   begin
-   if not Assigned(frmReservationDetails) then
-      frmReservationDetails := TfrmReservationDetails.Create(Application);
-    frmReservationDetails.Show;
+    g_FormFactory.Open_ReservationDetails();
   end;
 
   if (item = listItemReservation) then
   begin
-    if not Assigned(frmSearchHospital) then
-      frmSearchHospital := TfrmSearchHospital.Create(Application);
-    frmSearchHospital.Show;
+    g_FormFactory.Open_SearchHospitalDialog();
   end;
 
 end;

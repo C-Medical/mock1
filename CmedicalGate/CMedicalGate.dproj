@@ -211,22 +211,6 @@
         <DelphiCompile Include="$(MainSource)">
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
-        <DCCReference Include="SearchResult.pas">
-            <Form>frmSearchResults</Form>
-            <FormType>fmx</FormType>
-        </DCCReference>
-        <DCCReference Include="Reservation.pas">
-            <Form>frmReservation</Form>
-            <FormType>fmx</FormType>
-        </DCCReference>
-        <DCCReference Include="Menu.pas">
-            <Form>MenuBox</Form>
-            <FormType>fmx</FormType>
-        </DCCReference>
-        <DCCReference Include="MainFormBase.pas">
-            <Form>frmMainBase</Form>
-            <FormType>fmx</FormType>
-        </DCCReference>
         <DCCReference Include="SearchHospital.pas">
             <Form>frmSearchHospital</Form>
             <FormType>fmx</FormType>
@@ -235,16 +219,33 @@
             <Form>frmMain</Form>
             <FormType>fmx</FormType>
         </DCCReference>
-        <DCCReference Include="DetailBase.pas">
-            <Form>frmDetailBase</Form>
-            <FormType>fmx</FormType>
-        </DCCReference>
-        <DCCReference Include="ReservationDetails.pas">
+        <DCCReference Include="dialogs\ReservationDetails.pas">
             <Form>frmReservationDetails</Form>
             <FormType>fmx</FormType>
         </DCCReference>
         <DCCReference Include="ReservationList.pas">
             <Form>frmReservationList</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="common\MGFormFactory.pas"/>
+        <DCCReference Include="common\Menu.pas">
+            <Form>MenuBox</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="common\MainFormBase.pas">
+            <Form>frmMainBase</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="common\DetailBase.pas">
+            <Form>frmDetailBase</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="dialogs\SearchResult.pas">
+            <Form>frmSearchResult</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="dialogs\Reservation.pas">
+            <Form>frmReservation</Form>
             <FormType>fmx</FormType>
         </DCCReference>
         <BuildConfiguration Include="Release">
@@ -718,7 +719,7 @@
                 <ProjectRoot Platform="Win64" Name="$(PROJECTNAME)"/>
             </Deployment>
             <Platforms>
-                <Platform value="Android" ActiveMobileDevice="AVD">True</Platform>
+                <Platform value="Android" ActiveMobileDevice="0781febe">True</Platform>
                 <Platform value="iOSDevice">True</Platform>
                 <Platform value="iOSSimulator" ActiveMobileDevice="iPhone">True</Platform>
                 <Platform value="OSX32">True</Platform>

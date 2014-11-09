@@ -3,20 +3,26 @@ program CMedicalGate;
 uses
   System.StartUpCopy,
   FMX.Forms,
-  SearchResult in 'SearchResult.pas' {frmSearchResults},
-  Reservation in 'Reservation.pas' {frmReservation},
-  Menu in 'Menu.pas' {MenuBox},
-  MainFormBase in 'MainFormBase.pas' {frmMainBase},
   SearchHospital in 'SearchHospital.pas' {frmSearchHospital},
   MainForm in 'MainForm.pas' {frmMain},
-  DetailBase in 'DetailBase.pas' {frmDetailBase},
-  ReservationDetails in 'ReservationDetails.pas' {frmReservationDetails},
-  ReservationList in 'ReservationList.pas' {frmReservationList};
+  ReservationDetails in 'dialogs\ReservationDetails.pas' {frmReservationDetails},
+  ReservationList in 'ReservationList.pas' {frmReservationList},
+  MGFormFactory in 'common\MGFormFactory.pas',
+  Menu in 'common\Menu.pas' {MenuBox},
+  MainFormBase in 'common\MainFormBase.pas' {frmMainBase},
+  DetailBase in 'common\DetailBase.pas' {frmDetailBase},
+  SearchResult in 'dialogs\SearchResult.pas' {frmSearchResult},
+  Reservation in 'dialogs\Reservation.pas' {frmReservation};
 
 {$R *.res}
 
 begin
   Application.Initialize;
   Application.CreateForm(TfrmMain, frmMain);
+  Application.CreateForm(TMenuBox, MenuBox);
+  Application.CreateForm(TfrmMainBase, frmMainBase);
+  Application.CreateForm(TfrmDetailBase, frmDetailBase);
+  Application.CreateForm(TfrmSearchResult, frmSearchResult);
+  Application.CreateForm(TfrmReservation, frmReservation);
   Application.Run;
 end.

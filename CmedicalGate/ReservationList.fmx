@@ -1,6 +1,12 @@
 inherited frmReservationList: TfrmReservationList
   Caption = 'Reservation List'
   DesignerMasterStyle = 3
+  inherited mlvMenu: TMultiView
+    inherited Image1: TImage
+      MultiResBitmap.Height = 480
+      MultiResBitmap.Width = 640
+    end
+  end
   inherited MainLayout: TLayout
     inherited toolbarMain: TToolBar
       TabOrder = 1
@@ -10,8 +16,8 @@ inherited frmReservationList: TfrmReservationList
     end
     object lbxReservationList: TListBox
       Align = Client
-      Size.Width = 280.000000000000000000
-      Size.Height = 592.000000000000000000
+      Size.Width = 180.000000000000000000
+      Size.Height = 580.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 0
       DisableFocusEffect = True
@@ -20,7 +26,7 @@ inherited frmReservationList: TfrmReservationList
       DefaultItemStyles.GroupFooterStyle = ''
       OnItemClick = lbxReservationListItemClick
       object ListBoxGroupHeader1: TListBoxGroupHeader
-        Size.Width = 280.000000000000000000
+        Size.Width = 178.000000000000000000
         Size.Height = 30.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 0
@@ -36,7 +42,7 @@ inherited frmReservationList: TfrmReservationList
       end
       object listItemHeaderHistory: TListBoxGroupHeader
         Position.Y = 74.000000000000000000
-        Size.Width = 280.000000000000000000
+        Size.Width = 178.000000000000000000
         Size.Height = 30.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 2
@@ -49,8 +55,8 @@ inherited frmReservationList: TfrmReservationList
         Margins.Left = 30.000000000000000000
         Margins.Right = 30.000000000000000000
         Position.X = 30.000000000000000000
-        Position.Y = 512.000000000000000000
-        Size.Width = 220.000000000000000000
+        Position.Y = 498.000000000000000000
+        Size.Width = 118.000000000000000000
         Size.Height = 80.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 0
