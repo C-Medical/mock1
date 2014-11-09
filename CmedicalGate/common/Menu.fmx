@@ -4,7 +4,6 @@ object MenuBox: TMenuBox
   Caption = 'menu'
   ClientHeight = 400
   ClientWidth = 200
-  StyleBook = StyleBook1
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
@@ -14,28 +13,24 @@ object MenuBox: TMenuBox
     Size.Width = 200.000000000000000000
     Size.Height = 400.000000000000000000
     Size.PlatformDefault = False
-    StyleLookup = 'lbxMenuStyle1'
     TabOrder = 0
     DisableFocusEffect = True
     DefaultItemStyles.ItemStyle = ''
     DefaultItemStyles.GroupHeaderStyle = ''
     DefaultItemStyles.GroupFooterStyle = ''
     object listItemTopPage: TListBoxItem
-      StyleLookup = 'listItemReservaionListStyle1'
       TabOrder = 1
       Text = 'Top Page'
       OnClick = listItemTopPageClick
     end
     object listItemFindHotel: TListBoxItem
       Position.Y = 44.000000000000000000
-      StyleLookup = 'listItemReservaionListStyle1'
       TabOrder = 2
       Text = 'Find a hospital'
       OnClick = listItemFindHotelClick
     end
     object listItemReservaionList: TListBoxItem
       Position.Y = 88.000000000000000000
-      StyleLookup = 'listItemReservaionListStyle1'
       TabOrder = 0
       Text = 'My Reservations'
       OnClick = listItemReservaionListClick
@@ -67,6 +62,27 @@ object MenuBox: TMenuBox
       StyleLookup = 'listboxitemleftdetail'
       TabOrder = 6
       Text = 'Sign out'
+    end
+    object liteItemStyle: TListBoxItem
+      Position.Y = 250.000000000000000000
+      TabOrder = 8
+      Text = 'style: '
+      object cmbStyle: TComboBox
+        Items.Strings = (
+          'CmedicalGate'
+          'Amakrits'
+          'AquaGraphite'
+          'AquaLightSlate'
+          'CharcoalDarkSlate'
+          'CobaltXEMedia'
+          'TabletDark')
+        Position.X = 80.000000000000000000
+        Position.Y = 8.000000000000000000
+        Size.Width = 100.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+      end
     end
   end
   object StyleBook1: TStyleBook

@@ -16,6 +16,8 @@ type
     ListBoxItem2: TListBoxItem;
     ListBoxGroupHeader3: TListBoxGroupHeader;
     listItemReservation: TListBoxItem;
+    Label2: TLabel;
+    StyleBook1: TStyleBook;
     procedure lbxTopMainItemClick(const Sender: TCustomListBox;
       const Item: TListBoxItem);
   private

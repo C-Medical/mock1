@@ -1,22 +1,30 @@
 inherited frmMain: TfrmMain
   Caption = 'main form'
+  StyleBook = StyleBook1
   DesignerMasterStyle = 3
   inherited mlvMenu: TMultiView
-    inherited Image1: TImage
-      MultiResBitmap.Height = 480
-      MultiResBitmap.Width = 640
+    inherited layoutMultiView: TLayout
+      inherited toolMenuTop: TToolBar
+        StyleLookup = 'toolMenuTopStyle1'
+        inherited Image1: TImage
+          MultiResBitmap.Height = 36
+          MultiResBitmap.Width = 36
+        end
+      end
     end
   end
   inherited MainLayout: TLayout
     inherited toolbarMain: TToolBar
       inherited lblTitle: TLabel
+        StyleLookup = 'lblTitleStyle1'
         Text = 'Top Page'
       end
     end
     object lbxTopMain: TListBox
-      Align = Client
+      Align = Top
+      Position.Y = 48.000000000000000000
       Size.Width = 180.000000000000000000
-      Size.Height = 580.000000000000000000
+      Size.Height = 297.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 2
       DisableFocusEffect = True
@@ -25,7 +33,7 @@ inherited frmMain: TfrmMain
       DefaultItemStyles.GroupFooterStyle = ''
       OnItemClick = lbxTopMainItemClick
       object ListBoxGroupHeader1: TListBoxGroupHeader
-        Size.Width = 178.000000000000000000
+        Size.Width = 180.000000000000000000
         Size.Height = 30.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 6
@@ -42,7 +50,7 @@ inherited frmMain: TfrmMain
       end
       object ListBoxGroupHeader2: TListBoxGroupHeader
         Position.Y = 74.000000000000000000
-        Size.Width = 178.000000000000000000
+        Size.Width = 180.000000000000000000
         Size.Height = 30.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 7
@@ -60,7 +68,7 @@ inherited frmMain: TfrmMain
       end
       object ListBoxGroupHeader3: TListBoxGroupHeader
         Position.Y = 148.000000000000000000
-        Size.Width = 178.000000000000000000
+        Size.Width = 180.000000000000000000
         Size.Height = 30.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 8
@@ -75,5 +83,31 @@ inherited frmMain: TfrmMain
         Text = #30149#38498#12434#20104#32004#12377#12427
       end
     end
+    object Label2: TLabel
+      StyledSettings = [Family, Style, FontColor, Other]
+      Position.X = 8.000000000000000000
+      Position.Y = 352.000000000000000000
+      Size.Width = 169.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'Label2Style1'
+      Text = 'menu > style '#12391#12473#12479#12452#12523#22793#26356#12364#12391#12365#12414#12377
+    end
+  end
+  object StyleBook1: TStyleBook
+    ResourcesBin = {
+      464D585F5354594C4520322E3501060C4C6162656C325374796C653103610100
+      5450463007544C61796F757400095374796C654E616D65060C4C6162656C3253
+      74796C65310A506F736974696F6E2E5805000000000000808F07400A506F7369
+      74696F6E2E590500000000000000E006400A53697A652E576964746805000000
+      00000000A405400B53697A652E4865696768740500000000000000B803401453
+      697A652E506C6174666F726D44656661756C7408085461624F72646572020000
+      05545465787400095374796C654E616D6506047465787405416C69676E070643
+      6C69656E74064C6F636B6564090748697454657374080A53697A652E57696474
+      680500000000000000A405400B53697A652E4865696768740500000000000000
+      B803401453697A652E506C6174666F726D44656661756C740816546578745365
+      7474696E67732E466F6E742E53697A6505000000000000009003401654657874
+      53657474696E67732E466F6E74436F6C6F72070A636C614372696D736F6E0000
+      00}
   end
 end

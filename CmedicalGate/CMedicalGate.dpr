@@ -1,5 +1,7 @@
 program CMedicalGate;
 
+{$R *.dres}
+
 uses
   System.StartUpCopy,
   FMX.Forms,
@@ -19,10 +21,5 @@ uses
 begin
   Application.Initialize;
   Application.CreateForm(TfrmMain, frmMain);
-  Application.CreateForm(TMenuBox, MenuBox);
-  Application.CreateForm(TfrmMainBase, frmMainBase);
-  Application.CreateForm(TfrmDetailBase, frmDetailBase);
-  Application.CreateForm(TfrmSearchResult, frmSearchResult);
-  Application.CreateForm(TfrmReservation, frmReservation);
   Application.Run;
 end.
