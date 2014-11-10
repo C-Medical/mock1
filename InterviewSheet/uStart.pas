@@ -58,22 +58,29 @@ var
 implementation
 
 uses
-  uPasswd;
+  uPasswd, uReceiptSheet;
 
 {$R *.fmx}
 
 procedure TfrmStart.btnStartClick(Sender: TObject);
 var
-  dlg: TfrmPasswd;
+  dlg1: TfrmPasswd;
+  dlg2: TfrmReceiptSheet;
 begin
-  dlg := TfrmPasswd.Create(Self);
-  dlg.ShowModal(procedure(ModalResult: TModalResult)
+  dlg1 := TfrmPasswd.Create(Self);
+  dlg1.ShowModal(procedure(ModalResult: TModalResult)
   begin
-    if ModalResult = mrOk then
-    begin
+    dlg1.DisposeOf;
+    if ModalResult <> mrOk then Exit;
 
-    end;
-    dlg.DisposeOf;
+    dlg2 := TfrmReceiptSheet.Create(Self);
+    dlg2.ShowModal(procedure(ModalResult: TModalResult)
+    begin
+      if ModalResult = mrOk then
+      begin
+      end;
+      dlg2.DisposeOf;
+    end);
   end);
 end;
 

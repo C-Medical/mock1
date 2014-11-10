@@ -36,6 +36,7 @@ type
     Rectangle1: TRectangle;
     procedure Action1Execute(Sender: TObject);
     procedure Button11Click(Sender: TObject);
+    procedure btnStartClick(Sender: TObject);
   private
     { private êÈåæ }
   public
@@ -47,11 +48,17 @@ var
 
 implementation
 
+
 {$R *.fmx}
 
 procedure TfrmPasswd.Action1Execute(Sender: TObject);
 begin
   Edit1.Text := Edit1.Text + 'x';
+end;
+
+procedure TfrmPasswd.btnStartClick(Sender: TObject);
+begin
+  ModalResult := mrOk;
 end;
 
 procedure TfrmPasswd.Button11Click(Sender: TObject);

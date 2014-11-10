@@ -9,6 +9,7 @@ object frmPasswd: TfrmPasswd
   FormStyle = Popup
   FormFactor.Width = 320
   FormFactor.Height = 480
+  FormFactor.Orientations = [Portrait]
   FormFactor.Devices = [Desktop]
   DesignerMasterStyle = 0
   object Layout1: TLayout
@@ -293,7 +294,7 @@ object frmPasswd: TfrmPasswd
       object btnStart: TButton
         Anchors = [akRight, akBottom]
         StyledSettings = [Family]
-        Position.X = 123.500000000000000000
+        Position.X = 91.500000000000000000
         Position.Y = 486.000000000000000000
         Size.Width = 153.000000000000000000
         Size.Height = 44.000000000000000000
@@ -303,6 +304,7 @@ object frmPasswd: TfrmPasswd
         TextSettings.Font.Size = 24.000000000000000000
         TextSettings.Font.Style = [fsBold]
         TextSettings.FontColor = claNavy
+        OnClick = btnStartClick
       end
     end
   end

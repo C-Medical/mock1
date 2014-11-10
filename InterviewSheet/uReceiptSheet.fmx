@@ -1,0 +1,465 @@
+object frmReceiptSheet: TfrmReceiptSheet
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 640
+  ClientWidth = 400
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Orientations = [Portrait]
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 3
+  object Layout1: TLayout
+    Align = Client
+    Size.Width = 400.000000000000000000
+    Size.Height = 640.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    object Panel1: TPanel
+      Align = Top
+      Size.Width = 400.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'panelBlack'
+      TabOrder = 0
+      object Label1: TLabel
+        Align = Client
+        StyledSettings = [Family]
+        Size.Width = 400.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 24.000000000000000000
+        TextSettings.Font.Style = [fsBold]
+        TextSettings.HorzAlign = Center
+        Text = 'Works'#30149#38498#12288#9675#215#31185
+      end
+    end
+    object Panel2: TPanel
+      Align = Client
+      Padding.Left = 4.000000000000000000
+      Padding.Top = 4.000000000000000000
+      Padding.Right = 4.000000000000000000
+      Padding.Bottom = 4.000000000000000000
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 40.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 40.000000000000000000
+      Size.Width = 380.000000000000000000
+      Size.Height = 423.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      object Label2: TLabel
+        Align = Top
+        AutoSize = True
+        StyledSettings = [Family]
+        Position.X = 4.000000000000000000
+        Position.Y = 4.000000000000000000
+        Size.Width = 372.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 18.000000000000000000
+        TextSettings.WordWrap = False
+        Text = #20197#19979#12399'COMPANY'#12395#30331#37682#28168#12398#24773#22577#12391#12377#12290
+      end
+      object FlowLayout1: TFlowLayout
+        Align = Client
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Size.Width = 362.000000000000000000
+        Size.Height = 335.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Justify = Left
+        JustifyLastLine = Left
+        FlowDirection = LeftToRight
+        VerticalGap = 10.000000000000000000
+        object Label4: TLabel
+          StyledSettings = [Family, Style]
+          Size.Width = 120.000000000000000000
+          Size.Height = 27.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'labelItemTitle'
+          TextSettings.Font.Size = 20.000000000000000000
+          TextSettings.FontColor = claNavy
+          TextSettings.WordWrap = False
+          Text = #12362#21517#21069
+        end
+        object lblPatientName: TLabel
+          AutoSize = True
+          StyledSettings = [Family, Style, FontColor]
+          Position.X = 120.000000000000000000
+          Size.Width = 107.000000000000000000
+          Size.Height = 27.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'labelItemValue'
+          TextSettings.Font.Size = 20.000000000000000000
+          TextSettings.WordWrap = False
+          Text = 'Works '#22826#37070
+        end
+        object FlowLayoutBreak2: TFlowLayoutBreak
+          ChangesRules = False
+          Justify = Left
+          JustifyLastLine = Left
+          FlowDirection = LeftToRight
+        end
+        object Label5: TLabel
+          StyledSettings = [Family, Style]
+          Position.Y = 37.000000000000000000
+          Size.Width = 120.000000000000000000
+          Size.Height = 27.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'labelItemTitle'
+          TextSettings.Font.Size = 20.000000000000000000
+          TextSettings.FontColor = claNavy
+          TextSettings.WordWrap = False
+          Text = #24615#21029
+        end
+        object lblSex: TLabel
+          AutoSize = True
+          StyledSettings = [Family, Style, FontColor]
+          Position.X = 120.000000000000000000
+          Position.Y = 37.000000000000000000
+          Size.Width = 47.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'labelItemValue'
+          TextSettings.Font.Size = 20.000000000000000000
+          TextSettings.WordWrap = False
+          Text = #30007#24615
+        end
+        object FlowLayoutBreak3: TFlowLayoutBreak
+          ChangesRules = False
+          Justify = Left
+          JustifyLastLine = Left
+          FlowDirection = LeftToRight
+        end
+        object FlowLayoutBreak1: TFlowLayoutBreak
+          ChangesRules = False
+          Justify = Left
+          JustifyLastLine = Left
+          FlowDirection = LeftToRight
+        end
+        object Label6: TLabel
+          StyledSettings = [Family, Style]
+          Position.Y = 74.000000000000000000
+          Size.Width = 120.000000000000000000
+          Size.Height = 27.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'labelItemTitle'
+          TextSettings.Font.Size = 20.000000000000000000
+          TextSettings.FontColor = claNavy
+          TextSettings.WordWrap = False
+          Text = #29983#24180#26376#26085
+        end
+        object Label7: TLabel
+          AutoSize = True
+          StyledSettings = [Family, Style, FontColor]
+          Position.X = 120.000000000000000000
+          Position.Y = 74.000000000000000000
+          Size.Width = 107.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'labelItemValue'
+          TextSettings.Font.Size = 20.000000000000000000
+          TextSettings.WordWrap = False
+          Text = '19xx/12/31'
+        end
+        object FlowLayoutBreak4: TFlowLayoutBreak
+          ChangesRules = False
+          Justify = Left
+          JustifyLastLine = Left
+          FlowDirection = LeftToRight
+        end
+        object Label8: TLabel
+          StyledSettings = [Family, Style]
+          Position.Y = 111.000000000000000000
+          Size.Width = 120.000000000000000000
+          Size.Height = 27.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'labelItemTitle'
+          TextSettings.Font.Size = 20.000000000000000000
+          TextSettings.FontColor = claNavy
+          TextSettings.WordWrap = False
+          Text = #24180#40802
+        end
+        object Label9: TLabel
+          AutoSize = True
+          StyledSettings = [Family, Style, FontColor]
+          Position.X = 120.000000000000000000
+          Position.Y = 111.000000000000000000
+          Size.Width = 54.000000000000000000
+          Size.Height = 27.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'labelItemValue'
+          TextSettings.Font.Size = 20.000000000000000000
+          TextSettings.WordWrap = False
+          Text = '64 '#27507
+        end
+        object FlowLayoutBreak5: TFlowLayoutBreak
+          ChangesRules = False
+          Justify = Left
+          JustifyLastLine = Left
+          FlowDirection = LeftToRight
+        end
+        object Label10: TLabel
+          StyledSettings = [Family, Style]
+          Position.Y = 148.000000000000000000
+          Size.Width = 120.000000000000000000
+          Size.Height = 27.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'labelItemTitle'
+          TextSettings.Font.Size = 20.000000000000000000
+          TextSettings.FontColor = claNavy
+          TextSettings.WordWrap = False
+          Text = #20303#25152
+        end
+        object Label11: TLabel
+          AutoSize = True
+          StyledSettings = [Family, Style, FontColor]
+          Position.X = 120.000000000000000000
+          Position.Y = 148.000000000000000000
+          Size.Width = 94.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'labelItemValue'
+          TextSettings.Font.Size = 20.000000000000000000
+          TextSettings.WordWrap = False
+          Text = '123-4567'
+        end
+        object FlowLayoutBreak6: TFlowLayoutBreak
+          ChangesRules = False
+          Justify = Left
+          JustifyLastLine = Left
+          FlowDirection = LeftToRight
+        end
+        object Label13: TLabel
+          StyledSettings = [Family, Style, FontColor]
+          Margins.Left = 120.000000000000000000
+          Position.X = 120.000000000000000000
+          Position.Y = 185.000000000000000000
+          Size.Width = 240.000000000000000000
+          Size.Height = 60.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'labelItemValue'
+          TextSettings.Font.Size = 20.000000000000000000
+          Text = #26481#20140#37117#28207#21306#36196#22338'1-12-32'#12450#12540#12463#26862#12499#12523
+        end
+        object FlowLayoutBreak7: TFlowLayoutBreak
+          ChangesRules = False
+          Justify = Left
+          JustifyLastLine = Left
+          FlowDirection = LeftToRight
+        end
+        object Label14: TLabel
+          StyledSettings = [Family, Style]
+          Position.Y = 255.000000000000000000
+          Size.Width = 120.000000000000000000
+          Size.Height = 27.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'labelItemTitle'
+          TextSettings.Font.Size = 20.000000000000000000
+          TextSettings.FontColor = claNavy
+          TextSettings.WordWrap = False
+          Text = #38651#35441#30058#21495
+        end
+        object Label15: TLabel
+          AutoSize = True
+          StyledSettings = [Family, Style, FontColor]
+          Position.X = 120.000000000000000000
+          Position.Y = 255.000000000000000000
+          Size.Width = 135.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'labelItemValue'
+          TextSettings.Font.Size = 20.000000000000000000
+          TextSettings.WordWrap = False
+          Text = 'xxx-xxxx-xxxx'
+        end
+        object FlowLayoutBreak8: TFlowLayoutBreak
+          ChangesRules = False
+          Justify = Left
+          JustifyLastLine = Left
+          FlowDirection = LeftToRight
+        end
+        object Label16: TLabel
+          StyledSettings = [Family]
+          Position.Y = 292.000000000000000000
+          Size.Width = 120.000000000000000000
+          Size.Height = 27.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'labelItemTitle'
+          TextSettings.Font.Size = 20.000000000000000000
+          TextSettings.Font.Style = [fsBold]
+          TextSettings.FontColor = claNavy
+          TextSettings.WordWrap = False
+          Text = #12510#12452#12490#12531#12496#12540
+        end
+        object Label17: TLabel
+          AutoSize = True
+          StyledSettings = [Family, FontColor]
+          Position.X = 120.000000000000000000
+          Position.Y = 292.000000000000000000
+          Size.Width = 126.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'labelItemValue'
+          TextSettings.Font.Size = 20.000000000000000000
+          TextSettings.WordWrap = False
+          Text = 'abcde-12345'
+        end
+      end
+      object Label3: TLabel
+        Align = Top
+        AutoSize = True
+        StyledSettings = [Family]
+        Position.X = 4.000000000000000000
+        Position.Y = 28.000000000000000000
+        Size.Width = 372.000000000000000000
+        Size.Height = 46.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 18.000000000000000000
+        Text = #21021#35386#12398#26041#12399#20869#23481#12395#12362#38291#36949#12356#12364#12394#12356#12363#12289#20170#19968#24230#12372#30906#35469#12367#12384#12373#12356#12290
+      end
+    end
+    object Panel3: TPanel
+      Align = Bottom
+      Position.Y = 536.000000000000000000
+      Size.Width = 400.000000000000000000
+      Size.Height = 104.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object btnStart: TButton
+        Anchors = [akRight, akBottom]
+        StyledSettings = [Family]
+        Position.X = 200.000000000000000000
+        Position.Y = 52.000000000000000000
+        Size.Width = 185.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = #22238#31572#12434#22987#12417#12427
+        TextSettings.Font.Size = 24.000000000000000000
+        TextSettings.Font.Style = [fsBold]
+        TextSettings.FontColor = claNavy
+      end
+      object Label12: TLabel
+        Align = Top
+        AutoSize = True
+        StyledSettings = [Family]
+        Margins.Left = 10.000000000000000000
+        Position.X = 10.000000000000000000
+        Size.Width = 390.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 18.000000000000000000
+        TextSettings.WordWrap = False
+        Text = #12424#12429#12375#12369#12428#12400#12289#12302#22238#31572#12434#22987#12417#12427#12303#12508#12479#12531#12434#25276#12375#12390#12367#12384#12373#12356#12290
+      end
+    end
+  end
+  object CmMockDataSource1: TCmMockDataSource
+    AutoActivate = True
+    AutoPost = False
+    RecordCount = 10
+    FieldDefs = <
+      item
+        Name = 'Cm-Address1'
+        Generator = 'Cm-Address'
+        ReadOnly = False
+      end
+      item
+        Name = 'Cm-Age1'
+        Generator = 'Cm-Age'
+        ReadOnly = False
+      end
+      item
+        Name = 'Cm-BirthDay1'
+        Generator = 'Cm-BirthDay'
+        ReadOnly = False
+      end
+      item
+        Name = 'Cm-PatientName1'
+        Generator = 'Cm-PatientName'
+        ReadOnly = False
+      end
+      item
+        Name = 'Cm-PhoneNo1'
+        Generator = 'Cm-PhoneNo'
+        ReadOnly = False
+      end
+      item
+        Name = 'Cm-PostNo1'
+        Generator = 'Cm-PostNo'
+        ReadOnly = False
+      end
+      item
+        Name = 'Cm-ReceiptNumber1'
+        Generator = 'Cm-ReceiptNumber'
+        ReadOnly = False
+      end
+      item
+        Name = 'Cm-Sex1'
+        Generator = 'Cm-Sex'
+        ReadOnly = False
+      end>
+    ScopeMappings = <>
+    Left = 48
+    Top = 16
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 20
+    Top = 5
+    object LinkPropertyToFieldText: TLinkPropertyToField
+      Category = #12463#12452#12483#12463' '#12496#12452#12531#12487#12451#12531#12464
+      DataSource = CmMockDataSource1
+      FieldName = 'Cm-BirthDay1'
+      Component = Label7
+      ComponentProperty = 'Text'
+    end
+    object LinkPropertyToFieldText2: TLinkPropertyToField
+      Category = #12463#12452#12483#12463' '#12496#12452#12531#12487#12451#12531#12464
+      DataSource = CmMockDataSource1
+      FieldName = 'Cm-PostNo1'
+      Component = Label11
+      ComponentProperty = 'Text'
+    end
+    object LinkPropertyToFieldText3: TLinkPropertyToField
+      Category = #12463#12452#12483#12463' '#12496#12452#12531#12487#12451#12531#12464
+      DataSource = CmMockDataSource1
+      FieldName = 'Cm-Sex1'
+      Component = lblSex
+      ComponentProperty = 'Text'
+    end
+    object LinkPropertyToFieldText4: TLinkPropertyToField
+      Category = #12463#12452#12483#12463' '#12496#12452#12531#12487#12451#12531#12464
+      DataSource = CmMockDataSource1
+      FieldName = 'Cm-Age1'
+      Component = Label9
+      ComponentProperty = 'Text'
+    end
+    object LinkPropertyToFieldText5: TLinkPropertyToField
+      Category = #12463#12452#12483#12463' '#12496#12452#12531#12487#12451#12531#12464
+      DataSource = CmMockDataSource1
+      FieldName = 'Cm-Address1'
+      Component = Label13
+      ComponentProperty = 'Text'
+    end
+    object LinkPropertyToFieldText6: TLinkPropertyToField
+      Category = #12463#12452#12483#12463' '#12496#12452#12531#12487#12451#12531#12464
+      DataSource = CmMockDataSource1
+      FieldName = 'Cm-PhoneNo1'
+      Component = Label15
+      ComponentProperty = 'Text'
+    end
+    object LinkPropertyToFieldText7: TLinkPropertyToField
+      Category = #12463#12452#12483#12463' '#12496#12452#12531#12487#12451#12531#12464
+      DataSource = CmMockDataSource1
+      FieldName = 'Cm-PatientName1'
+      Component = lblPatientName
+      ComponentProperty = 'Text'
+    end
+  end
+end

@@ -49,11 +49,12 @@ procedure TfrmReady.FormCreate(Sender: TObject);
 var
   style: TFmxObject;
 begin
+  style:= nil;
   {$IFDEF MSWINDOWS}
-  style := TStyleStreaming.LoadFromResource(HInstance, 'WinLight', RT_RCDATA);
+  //style := TStyleStreaming.LoadFromResource(HInstance, 'WinLight', RT_RCDATA);
   {$ENDIF}
   {$IFDEF Android}
-  style := TStyleStreaming.LoadFromResource(HInstance, 'AndroidLight', RT_RCDATA);
+  //style := TStyleStreaming.LoadFromResource(HInstance, 'AndroidLight', RT_RCDATA);
   {$ENDIF}
   if Style<> nil then
   TStyleManager.SetStyle(Style);

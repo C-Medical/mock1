@@ -225,6 +225,10 @@
             <Form>frmPasswd</Form>
             <FormType>fmx</FormType>
         </DCCReference>
+        <DCCReference Include="uReceiptSheet.pas">
+            <Form>frmReceiptSheet</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
         <RcItem Include="..\Styles\Android\AndroidDark.fsf">
             <ContainerId>ResourceItem</ContainerId>
             <ResourceType>RCDATA</ResourceType>

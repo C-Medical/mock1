@@ -39,6 +39,26 @@ type
     function CreateDelegate: TValueGeneratorDelegate; override;
   end;
 
+  TCmBirthDayGenerator = class(TDelegateValueGenerator)
+  protected
+    function CreateDelegate: TValueGeneratorDelegate; override;
+  end;
+
+  TCmPostNoGenerator = class(TDelegateValueGenerator)
+  protected
+    function CreateDelegate: TValueGeneratorDelegate; override;
+  end;
+
+  TCmAddressGenerator = class(TDelegateValueGenerator)
+  protected
+    function CreateDelegate: TValueGeneratorDelegate; override;
+  end;
+
+  TCmPhoneNoGenerator = class(TDelegateValueGenerator)
+  protected
+    function CreateDelegate: TValueGeneratorDelegate; override;
+  end;
+
 procedure Register;
 
 implementation
@@ -137,6 +157,34 @@ begin
   Result := TTypedListValueGeneratorDelegate<String>.Create([optRepeat], ['íjê´', 'èóê´']);
 end;
 
+{ TCmPhoneNoGenerator }
+
+function TCmPhoneNoGenerator.CreateDelegate: TValueGeneratorDelegate;
+begin
+  Result := TTypedListValueGeneratorDelegate<String>.Create([optRepeat], ['xxx-xxxx-xxxx']);
+end;
+
+{ TCmBirthDayGenerator }
+
+function TCmBirthDayGenerator.CreateDelegate: TValueGeneratorDelegate;
+begin
+  Result := TTypedListValueGeneratorDelegate<String>.Create([optRepeat], ['19xx/12/31']);
+end;
+
+{ TCmPostNoGenerator }
+
+function TCmPostNoGenerator.CreateDelegate: TValueGeneratorDelegate;
+begin
+  Result := TTypedListValueGeneratorDelegate<String>.Create([optRepeat], ['123-4567']);
+end;
+
+{ TCmAddressGenerator }
+
+function TCmAddressGenerator.CreateDelegate: TValueGeneratorDelegate;
+begin
+  Result := TTypedListValueGeneratorDelegate<String>.Create([optRepeat], ['ìåãûìsç`ãÊê‘ç‚1-12-32ÉAÅ[ÉNêXÉrÉã']);
+end;
+
 initialization
   RegisterValueGenerator('Cm-ReceiptNumber', [ftString],
     TValueGeneratorDescription.Create(TCmReceiptNumberGenerator));
@@ -146,10 +194,22 @@ initialization
     TValueGeneratorDescription.Create(TCmAgeGenerator));
   RegisterValueGenerator('Cm-Sex', [ftString],
     TValueGeneratorDescription.Create(TCmSexGenerator));
+  RegisterValueGenerator('Cm-PhoneNo', [ftString],
+    TValueGeneratorDescription.Create(TCmPhoneNoGenerator));
+  RegisterValueGenerator('Cm-BirthDay', [ftString],
+    TValueGeneratorDescription.Create(TCmBirthDayGenerator));
+  RegisterValueGenerator('Cm-PostNo', [ftString],
+    TValueGeneratorDescription.Create(TCmPostNoGenerator));
+  RegisterValueGenerator('Cm-Address', [ftString],
+    TValueGeneratorDescription.Create(TCmAddressGenerator));
 finalization
   UnRegisterValueGenerator('Cm-ReceiptNumber', [ftString], '');
   UnRegisterValueGenerator('Cm-PatientName', [ftString], '');
   UnRegisterValueGenerator('Cm-Age', [ftString], '');
   UnRegisterValueGenerator('Cm-Sex', [ftString], '');
+  UnRegisterValueGenerator('Cm-PhoneNo', [ftString], '');
+  UnRegisterValueGenerator('Cm-BirthDay', [ftString], '');
+  UnRegisterValueGenerator('Cm-PostNo', [ftString], '');
+  UnRegisterValueGenerator('Cm-Address', [ftString], '');
 
 end.
