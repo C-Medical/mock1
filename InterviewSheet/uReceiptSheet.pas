@@ -65,5 +65,6 @@ var
 implementation
 
 {$R *.fmx}
+{$R *.LgXhdpiTb.fmx ANDROID}
 
 end.

@@ -40,10 +40,15 @@ implementation
 
 uses
   FMX.Styles,
-  uStart;
+  uStart, uReceiptSheet;
 
 {$R *.fmx}
 {$R *.LgXhdpiTb.fmx ANDROID}
+
+
+var
+  frmStart: TfrmStart;
+  frmReceipt: TfrmReceiptSheet;
 
 procedure TfrmReady.FormCreate(Sender: TObject);
 var
@@ -68,17 +73,27 @@ end;
 
 procedure TfrmReady.ListView1ItemClick(const Sender: TObject;
   const AItem: TListViewItem);
-var
-  dlg: TfrmStart;
 begin
-  dlg := TfrmStart.Create(Self);
-  dlg.ShowModal(procedure(ModalResult: TModalResult)
+  if frmStart = nil then
+  begin
+    frmStart := TfrmStart.Create(Self);
+  end;
+
+  frmStart.ShowModal(procedure(ModalResult: TModalResult)
   begin
     if ModalResult = mrOk then
     begin
+      if frmReceipt = nil then
+      begin
+        frmReceipt := TfrmReceiptSheet.Create(Self);
+      end;
+
+      frmReceipt.ShowModal(procedure(ModalResult: TModalResult)
+      begin
+
+      end);
 
     end;
-    dlg.DisposeOf;
   end);
 end;
 

@@ -58,29 +58,28 @@ var
 implementation
 
 uses
-  uPasswd, uReceiptSheet;
+  uPasswd;
 
 {$R *.fmx}
+{$R *.LgXhdpiTb.fmx ANDROID}
+
+
+var
+  frmPasswd: TfrmPasswd;
 
 procedure TfrmStart.btnStartClick(Sender: TObject);
-var
-  dlg1: TfrmPasswd;
-  dlg2: TfrmReceiptSheet;
 begin
-  dlg1 := TfrmPasswd.Create(Self);
-  dlg1.ShowModal(procedure(ModalResult: TModalResult)
+  if frmPasswd = nil then
   begin
-    dlg1.DisposeOf;
-    if ModalResult <> mrOk then Exit;
+    frmPasswd := TfrmPasswd.Create(Self);
+  end;
 
-    dlg2 := TfrmReceiptSheet.Create(Self);
-    dlg2.ShowModal(procedure(ModalResult: TModalResult)
+  frmPasswd.ShowModal(procedure(ModalResult: TModalResult)
+  begin
+    if ModalResult = mrOk then
     begin
-      if ModalResult = mrOk then
-      begin
-      end;
-      dlg2.DisposeOf;
-    end);
+      Self.ModalResult := mrOk;
+    end;
   end);
 end;
 

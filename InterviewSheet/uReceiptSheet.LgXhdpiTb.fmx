@@ -1,0 +1,43 @@
+inherited frmReceiptSheet_LgXhdpiTb: TfrmReceiptSheet_LgXhdpiTb
+  ClientHeight = 829
+  ClientWidth = 480
+  DesignerMasterStyle = 3
+  inherited Layout1: TLayout
+    Size.Width = 480.000000000000000000
+    Size.Height = 829.000000000000000000
+    inherited Panel1: TPanel
+      Size.Width = 480.000000000000000000
+      Size.Height = 48.000000000000000000
+      inherited Label1: TLabel
+        Size.Width = 480.000000000000000000
+        Size.Height = 48.000000000000000000
+        TextSettings.Font.Size = 36.000000000000000000
+      end
+    end
+    inherited Panel2: TPanel
+      Size.Width = 460.000000000000000000
+      Size.Height = 597.000000000000000000
+      inherited Label2: TLabel
+        Size.Width = 452.000000000000000000
+      end
+      inherited FlowLayout1: TFlowLayout
+        Size.Width = 442.000000000000000000
+        Size.Height = 532.000000000000000000
+      end
+      inherited Label3: TLabel
+        Size.Width = 452.000000000000000000
+        Size.Height = 23.000000000000000000
+      end
+    end
+    inherited Panel3: TPanel
+      Position.Y = 725.000000000000000000
+      Size.Width = 480.000000000000000000
+      inherited btnStart: TButton
+        Position.X = 280.000000000000000000
+      end
+      inherited Label12: TLabel
+        Size.Width = 470.000000000000000000
+      end
+    end
+  end
+end

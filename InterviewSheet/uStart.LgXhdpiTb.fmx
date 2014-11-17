@@ -1,0 +1,57 @@
+inherited frmStart_LgXhdpiTb: TfrmStart_LgXhdpiTb
+  ClientHeight = 829
+  ClientWidth = 480
+  DesignerMasterStyle = 3
+  inherited Layout1: TLayout
+    Size.Width = 480.000000000000000000
+    Size.Height = 829.000000000000000000
+    inherited Panel1: TPanel
+      Size.Width = 480.000000000000000000
+      Size.Height = 48.000000000000000000
+      inherited lblTitle: TLabel
+        Size.Width = 480.000000000000000000
+        Size.Height = 48.000000000000000000
+        TextSettings.Font.Size = 36.000000000000000000
+        TextSettings.WordWrap = False
+      end
+    end
+    inherited Panel3: TPanel
+      Position.Y = 765.000000000000000000
+      Size.Width = 480.000000000000000000
+      inherited btnStart: TButton
+        Position.X = 312.000000000000000000
+      end
+    end
+    inherited Panel2: TPanel
+      Size.Width = 480.000000000000000000
+      Size.Height = 717.000000000000000000
+      inherited FlowLayout1: TFlowLayout
+        Size.Width = 400.000000000000000000
+        Size.Height = 424.000000000000000000
+        inherited lblAge: TLabel
+          Text = '50 '#27507
+        end
+      end
+      inherited ListBox1: TListBox
+        Position.Y = 486.000000000000000000
+        Size.Width = 440.000000000000000000
+        inherited ListBoxItem1: TListBoxItem
+          Size.Width = 440.000000000000000000
+        end
+        inherited ListBoxItem2: TListBoxItem
+          Size.Width = 440.000000000000000000
+        end
+        inherited ListBoxItem3: TListBoxItem
+          Size.Width = 440.000000000000000000
+        end
+      end
+      inherited Label2: TLabel
+        Position.Y = 464.000000000000000000
+        Size.Width = 460.000000000000000000
+      end
+    end
+  end
+  inherited StyleBook1: TStyleBook
+    Left = 64
+  end
+end

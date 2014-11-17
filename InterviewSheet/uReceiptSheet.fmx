@@ -194,7 +194,7 @@ object frmReceiptSheet: TfrmReceiptSheet
           StyleLookup = 'labelItemValue'
           TextSettings.Font.Size = 20.000000000000000000
           TextSettings.WordWrap = False
-          Text = '64 '#27507
+          Text = '43 '#27507
         end
         object FlowLayoutBreak5: TFlowLayoutBreak
           ChangesRules = False

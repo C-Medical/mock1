@@ -7,14 +7,17 @@ inherited frmReady_LgXhdpiTb: TfrmReady_LgXhdpiTb
     Size.Height = 829.000000000000000000
     inherited Panel1: TPanel
       Size.Width = 480.000000000000000000
+      Size.Height = 48.000000000000000000
       inherited Label1: TLabel
         Size.Width = 480.000000000000000000
+        Size.Height = 48.000000000000000000
         StyleLookup = 'valuelabelstyle'
+        TextSettings.Font.Size = 36.000000000000000000
       end
     end
     inherited Panel2: TPanel
       Size.Width = 432.000000000000000000
-      Size.Height = 696.000000000000000000
+      Size.Height = 681.000000000000000000
       StyleLookup = 'panelContents'
       inherited Label2: TLabel
         Size.Width = 424.000000000000000000
@@ -24,7 +27,7 @@ inherited frmReady_LgXhdpiTb: TfrmReady_LgXhdpiTb
       end
       inherited ListView1: TListView
         Size.Width = 424.000000000000000000
-        Size.Height = 635.000000000000000000
+        Size.Height = 620.000000000000000000
         ItemAppearanceObjects.ItemObjects.Detail.PlaceOffset.Y = 5.000000000000000000
         ItemAppearanceObjects.ItemObjects.Accessory.AccessoryType = Detail
         ItemAppearanceObjects.ItemObjects.Accessory.VertAlign = Trailing
