@@ -23,6 +23,47 @@ inherited frmReceiptSheet_LgXhdpiTb: TfrmReceiptSheet_LgXhdpiTb
       inherited FlowLayout1: TFlowLayout
         Size.Width = 442.000000000000000000
         Size.Height = 532.000000000000000000
+        VerticalGap = 20.000000000000000000
+        inherited Label5: TLabel
+          Position.Y = 47.000000000000000000
+        end
+        inherited lblSex: TLabel
+          Position.Y = 47.000000000000000000
+        end
+        inherited Label6: TLabel
+          Position.Y = 94.000000000000000000
+        end
+        inherited Label7: TLabel
+          Position.Y = 94.000000000000000000
+        end
+        inherited Label8: TLabel
+          Position.Y = 141.000000000000000000
+        end
+        inherited Label9: TLabel
+          Position.Y = 141.000000000000000000
+          Text = '37 '#27507
+        end
+        inherited Label10: TLabel
+          Position.Y = 188.000000000000000000
+        end
+        inherited Label11: TLabel
+          Position.Y = 188.000000000000000000
+        end
+        inherited Label13: TLabel
+          Position.Y = 235.000000000000000000
+        end
+        inherited Label14: TLabel
+          Position.Y = 315.000000000000000000
+        end
+        inherited Label15: TLabel
+          Position.Y = 315.000000000000000000
+        end
+        inherited Label16: TLabel
+          Position.Y = 362.000000000000000000
+        end
+        inherited Label17: TLabel
+          Position.Y = 362.000000000000000000
+        end
       end
       inherited Label3: TLabel
         Size.Width = 452.000000000000000000
@@ -34,6 +75,7 @@ inherited frmReceiptSheet_LgXhdpiTb: TfrmReceiptSheet_LgXhdpiTb
       Size.Width = 480.000000000000000000
       inherited btnStart: TButton
         Position.X = 280.000000000000000000
+        OnClick = btnStartClick
       end
       inherited Label12: TLabel
         Size.Width = 470.000000000000000000

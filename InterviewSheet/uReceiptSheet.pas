@@ -53,6 +53,7 @@ type
     FlowLayoutBreak8: TFlowLayoutBreak;
     Label16: TLabel;
     Label17: TLabel;
+    procedure btnStartClick(Sender: TObject);
   private
     { private êÈåæ }
   public
@@ -64,7 +65,29 @@ var
 
 implementation
 
+uses
+  uInterview;
+
+var
+  frmInterview: TfrmInterview;
+
 {$R *.fmx}
 {$R *.LgXhdpiTb.fmx ANDROID}
+
+procedure TfrmReceiptSheet.btnStartClick(Sender: TObject);
+begin
+  if frmInterview = nil then
+  begin
+    frmInterview := TfrmInterview.Create(Self);
+  end;
+
+  frmInterview.ShowModal(procedure(ModalResult: TModalResult)
+  begin
+    if ModalResult = mrOk then
+    begin
+      Self.ModalResult := mrOk;
+    end;
+  end);
+end;
 
 end.

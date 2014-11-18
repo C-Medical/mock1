@@ -1,0 +1,138 @@
+object frm1: Tfrm1
+  Size.Width = 400.000000000000000000
+  Size.Height = 400.000000000000000000
+  Size.PlatformDefault = False
+  TabOrder = 0
+  object CalloutPanel1: TCalloutPanel
+    Align = Top
+    Padding.Top = 11.000000000000000000
+    Padding.Bottom = 20.000000000000000000
+    Margins.Left = 40.000000000000000000
+    Margins.Top = 20.000000000000000000
+    Margins.Right = 40.000000000000000000
+    Margins.Bottom = 10.000000000000000000
+    Position.X = 40.000000000000000000
+    Position.Y = 20.000000000000000000
+    Size.Width = 320.000000000000000000
+    Size.Height = 160.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    CalloutWidth = 23.000000000000000000
+    CalloutLength = 20.000000000000000000
+    CalloutPosition = Bottom
+    object Label1: TLabel
+      Align = Client
+      StyledSettings = [Family, Style, FontColor]
+      Margins.Left = 20.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 20.000000000000000000
+      Margins.Bottom = 20.000000000000000000
+      Size.Width = 280.000000000000000000
+      Size.Height = 99.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 24.000000000000000000
+      Text = #12393#12398#12424#12358#12394#30151#29366#12391#26469#38498#12373#12428#12414#12375#12383#12363#65311
+    end
+  end
+  object FlowLayout1: TFlowLayout
+    Align = Client
+    Margins.Left = 30.000000000000000000
+    Margins.Top = 10.000000000000000000
+    Margins.Right = 30.000000000000000000
+    Margins.Bottom = 10.000000000000000000
+    Size.Width = 340.000000000000000000
+    Size.Height = 190.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Justify = Left
+    JustifyLastLine = Left
+    FlowDirection = LeftToRight
+    HorizontalGap = 10.000000000000000000
+    VerticalGap = 5.000000000000000000
+    object Button2: TButton
+      StaysPressed = True
+      StyledSettings = [Family, FontColor]
+      Size.Width = 160.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 6
+      Text = #12367#12375#12419#12415
+      TextSettings.Font.Size = 24.000000000000000000
+      TextSettings.Font.Style = [fsBold]
+    end
+    object Button3: TButton
+      StaysPressed = True
+      StyledSettings = [Family, FontColor]
+      Position.X = 170.000000000000000000
+      Size.Width = 160.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 5
+      Text = #40763#27700
+      TextSettings.Font.Size = 24.000000000000000000
+      TextSettings.Font.Style = [fsBold]
+    end
+    object Button1: TButton
+      StaysPressed = True
+      StyledSettings = [Family, FontColor]
+      Position.Y = 49.000000000000000000
+      Size.Width = 160.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+      Text = #40763#12389#12414#12426
+      TextSettings.Font.Size = 24.000000000000000000
+      TextSettings.Font.Style = [fsBold]
+    end
+    object Button4: TButton
+      StaysPressed = True
+      StyledSettings = [Family, FontColor]
+      Position.X = 170.000000000000000000
+      Position.Y = 49.000000000000000000
+      Size.Width = 160.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      Text = #12398#12393#12398#30171#12415
+      TextSettings.Font.Size = 24.000000000000000000
+      TextSettings.Font.Style = [fsBold]
+    end
+    object Button5: TButton
+      StaysPressed = True
+      StyledSettings = [Family, FontColor]
+      Position.Y = 98.000000000000000000
+      Size.Width = 160.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      Text = #12379#12365
+      TextSettings.Font.Size = 24.000000000000000000
+      TextSettings.Font.Style = [fsBold]
+    end
+    object Button6: TButton
+      StaysPressed = True
+      StyledSettings = [Family, FontColor]
+      Position.X = 170.000000000000000000
+      Position.Y = 98.000000000000000000
+      Size.Width = 160.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = #12383#12435
+      TextSettings.Font.Size = 24.000000000000000000
+      TextSettings.Font.Style = [fsBold]
+    end
+    object Button7: TButton
+      StaysPressed = True
+      StyledSettings = [Family, FontColor]
+      Position.Y = 147.000000000000000000
+      Size.Width = 160.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = #30330#29105
+      TextSettings.Font.Size = 24.000000000000000000
+      TextSettings.Font.Style = [fsBold]
+    end
+  end
+end

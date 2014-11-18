@@ -1,0 +1,151 @@
+object frmInterview: TfrmInterview
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 640
+  ClientWidth = 400
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 3
+  object Layout1: TLayout
+    Align = Client
+    Size.Width = 400.000000000000000000
+    Size.Height = 640.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    object Panel1: TPanel
+      Align = Top
+      Size.Width = 400.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'panelBlack'
+      TabOrder = 0
+      object Label1: TLabel
+        Align = Client
+        StyledSettings = [Family]
+        Size.Width = 400.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 36.000000000000000000
+        TextSettings.Font.Style = [fsBold]
+        TextSettings.HorzAlign = Center
+        Text = 'Works'#30149#38498#12288#9675#215#31185
+      end
+    end
+    object Panel2: TPanel
+      Align = Client
+      Padding.Left = 4.000000000000000000
+      Padding.Top = 4.000000000000000000
+      Padding.Right = 4.000000000000000000
+      Padding.Bottom = 4.000000000000000000
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Size.Width = 380.000000000000000000
+      Size.Height = 468.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      inline frm1: Tfrm1
+        Position.X = 16.000000000000000000
+        Position.Y = 24.000000000000000000
+        Size.Width = 209.000000000000000000
+        Size.Height = 233.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        inherited CalloutPanel1: TCalloutPanel
+          Size.Width = 129.000000000000000000
+          inherited Label1: TLabel
+            Size.Width = 89.000000000000000000
+          end
+        end
+        inherited FlowLayout1: TFlowLayout
+          Size.Width = 149.000000000000000000
+          Size.Height = 23.000000000000000000
+          inherited Button3: TButton
+            Position.Y = 49.000000000000000000
+          end
+        end
+      end
+    end
+    object Panel3: TPanel
+      Align = Bottom
+      Position.Y = 536.000000000000000000
+      Size.Width = 400.000000000000000000
+      Size.Height = 104.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object btnNext: TButton
+        Anchors = [akRight, akBottom]
+        StyledSettings = [Family]
+        Position.X = 272.000000000000000000
+        Position.Y = 52.000000000000000000
+        Size.Width = 113.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = #27425#12408
+        TextSettings.Font.Size = 24.000000000000000000
+        TextSettings.Font.Style = [fsBold]
+        TextSettings.FontColor = claNavy
+      end
+      object btnBack: TButton
+        Anchors = [akRight, akBottom]
+        StyledSettings = [Family]
+        Position.X = 16.000000000000000000
+        Position.Y = 52.000000000000000000
+        Size.Width = 113.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = #25147#12427
+        TextSettings.Font.Size = 24.000000000000000000
+        TextSettings.Font.Style = [fsBold]
+        TextSettings.FontColor = claNavy
+      end
+      object Layout2: TLayout
+        Align = Top
+        Size.Width = 400.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 5
+        object Label2: TLabel
+          Align = Left
+          StyledSettings = [Family, Style, FontColor]
+          Margins.Left = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Position.X = 10.000000000000000000
+          Size.Width = 40.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 18.000000000000000000
+          TextSettings.WordWrap = False
+          Text = #38283#22987
+        end
+        object Label3: TLabel
+          Align = Right
+          StyledSettings = [Family, Style, FontColor]
+          Margins.Left = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Position.X = 350.000000000000000000
+          Size.Width = 40.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 18.000000000000000000
+          TextSettings.WordWrap = False
+          Text = #32066#20102
+        end
+        object ProgressBar1: TProgressBar
+          Align = Client
+          Orientation = Horizontal
+          Margins.Top = 15.000000000000000000
+          Size.Width = 280.000000000000000000
+          Size.Height = 10.000000000000000000
+          Size.PlatformDefault = False
+        end
+      end
+    end
+  end
+end

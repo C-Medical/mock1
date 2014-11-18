@@ -1,0 +1,41 @@
+inherited frmStart_XLgXhdpiTb: TfrmStart_XLgXhdpiTb
+  ClientHeight = 1255
+  ClientWidth = 800
+  DesignerMasterStyle = 3
+  inherited Layout1: TLayout
+    Size.Width = 800.000000000000000000
+    Size.Height = 1255.000000000000000000
+    inherited Panel1: TPanel
+      Size.Width = 800.000000000000000000
+      inherited lblTitle: TLabel
+        Size.Width = 800.000000000000000000
+      end
+    end
+    inherited Panel3: TPanel
+      Position.Y = 1191.000000000000000000
+      Size.Width = 800.000000000000000000
+      inherited btnStart: TButton
+        Position.X = 632.000000000000000000
+      end
+    end
+    inherited Panel2: TPanel
+      Size.Width = 800.000000000000000000
+      Size.Height = 1158.000000000000000000
+      inherited FlowLayout1: TFlowLayout
+        Size.Width = 720.000000000000000000
+        Size.Height = 865.000000000000000000
+        inherited lblAge: TLabel
+          Text = '79 '#27507
+        end
+      end
+      inherited ListBox1: TListBox
+        Position.Y = 927.000000000000000000
+        Size.Width = 760.000000000000000000
+      end
+      inherited Label2: TLabel
+        Position.Y = 905.000000000000000000
+        Size.Width = 780.000000000000000000
+      end
+    end
+  end
+end

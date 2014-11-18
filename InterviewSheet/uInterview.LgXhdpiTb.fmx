@@ -1,0 +1,33 @@
+inherited frmInterview_LgXhdpiTb: TfrmInterview_LgXhdpiTb
+  ClientHeight = 829
+  ClientWidth = 480
+  DesignerMasterStyle = 3
+  inherited Layout1: TLayout
+    Size.Width = 480.000000000000000000
+    Size.Height = 829.000000000000000000
+    inherited Panel1: TPanel
+      Size.Width = 480.000000000000000000
+      inherited Label1: TLabel
+        Size.Width = 480.000000000000000000
+      end
+    end
+    inherited Panel2: TPanel
+      Size.Width = 460.000000000000000000
+      Size.Height = 657.000000000000000000
+    end
+    inherited Panel3: TPanel
+      Position.Y = 725.000000000000000000
+      Size.Width = 480.000000000000000000
+      inherited Layout2: TLayout
+        Size.Width = 480.000000000000000000
+        TabOrder = 6
+        inherited Label3: TLabel
+          Position.X = 430.000000000000000000
+        end
+        inherited ProgressBar1: TProgressBar
+          Size.Width = 360.000000000000000000
+        end
+      end
+    end
+  end
+end

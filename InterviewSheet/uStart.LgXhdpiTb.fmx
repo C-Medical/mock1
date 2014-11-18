@@ -29,7 +29,7 @@ inherited frmStart_LgXhdpiTb: TfrmStart_LgXhdpiTb
         Size.Width = 400.000000000000000000
         Size.Height = 424.000000000000000000
         inherited lblAge: TLabel
-          Text = '50 '#27507
+          Text = '79 '#27507
         end
       end
       inherited ListBox1: TListBox

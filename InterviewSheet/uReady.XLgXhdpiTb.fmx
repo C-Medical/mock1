@@ -1,0 +1,31 @@
+inherited frmReady_XLgXhdpiTb: TfrmReady_XLgXhdpiTb
+  ClientHeight = 1255
+  ClientWidth = 800
+  DesignerMasterStyle = 3
+  inherited ScaledLayout1: TScaledLayout
+    OriginalHeight = 1255.000000000000000000
+    Size.Width = 800.000000000000000000
+    Size.Height = 1255.000000000000000000
+    inherited Layout1: TLayout
+      Size.Width = 800.000000000000000000
+      Size.Height = 1255.000000000000000000
+      inherited Panel1: TPanel
+        Size.Width = 800.000000000000000000
+        inherited Label1: TLabel
+          Size.Width = 800.000000000000000000
+        end
+      end
+      inherited Panel2: TPanel
+        Size.Width = 752.000000000000000000
+        Size.Height = 1122.000000000000000000
+        inherited Label2: TLabel
+          Size.Width = 744.000000000000000000
+        end
+        inherited ListView1: TListView
+          Size.Width = 744.000000000000000000
+          Size.Height = 1061.000000000000000000
+        end
+      end
+    end
+  end
+end

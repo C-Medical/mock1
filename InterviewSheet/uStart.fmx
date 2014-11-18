@@ -77,7 +77,7 @@ object frmStart: TfrmStart
         Justify = Left
         JustifyLastLine = Left
         FlowDirection = LeftToRight
-        VerticalGap = 10.000000000000000000
+        VerticalGap = 20.000000000000000000
         object Label1: TLabel
           Size.Width = 120.000000000000000000
           Size.Height = 27.000000000000000000
@@ -102,7 +102,7 @@ object frmStart: TfrmStart
           FlowDirection = LeftToRight
         end
         object Label3: TLabel
-          Position.Y = 40.000000000000000000
+          Position.Y = 50.000000000000000000
           Size.Width = 120.000000000000000000
           Size.Height = 27.000000000000000000
           Size.PlatformDefault = False
@@ -112,7 +112,7 @@ object frmStart: TfrmStart
         end
         object lblPatientName: TLabel
           Position.X = 120.000000000000000000
-          Position.Y = 40.000000000000000000
+          Position.Y = 50.000000000000000000
           Size.Width = 200.000000000000000000
           Size.Height = 30.000000000000000000
           Size.PlatformDefault = False
@@ -127,7 +127,7 @@ object frmStart: TfrmStart
           FlowDirection = LeftToRight
         end
         object Label5: TLabel
-          Position.Y = 80.000000000000000000
+          Position.Y = 100.000000000000000000
           Size.Width = 120.000000000000000000
           Size.Height = 27.000000000000000000
           Size.PlatformDefault = False
@@ -137,7 +137,7 @@ object frmStart: TfrmStart
         end
         object lblSex: TLabel
           Position.X = 120.000000000000000000
-          Position.Y = 80.000000000000000000
+          Position.Y = 100.000000000000000000
           Size.Width = 200.000000000000000000
           Size.Height = 30.000000000000000000
           Size.PlatformDefault = False
@@ -152,7 +152,7 @@ object frmStart: TfrmStart
           FlowDirection = LeftToRight
         end
         object Label7: TLabel
-          Position.Y = 120.000000000000000000
+          Position.Y = 150.000000000000000000
           Size.Width = 120.000000000000000000
           Size.Height = 27.000000000000000000
           Size.PlatformDefault = False
@@ -162,13 +162,13 @@ object frmStart: TfrmStart
         end
         object lblAge: TLabel
           Position.X = 120.000000000000000000
-          Position.Y = 120.000000000000000000
+          Position.Y = 150.000000000000000000
           Size.Width = 200.000000000000000000
           Size.Height = 30.000000000000000000
           Size.PlatformDefault = False
           StyleLookup = 'labelItemValue'
           TextSettings.WordWrap = False
-          Text = '96 '#27507
+          Text = '43 '#27507
         end
         object FlowLayoutBreak4: TFlowLayoutBreak
           ChangesRules = False
@@ -177,7 +177,7 @@ object frmStart: TfrmStart
           FlowDirection = LeftToRight
         end
         object Label9: TLabel
-          Position.Y = 160.000000000000000000
+          Position.Y = 200.000000000000000000
           Size.Width = 120.000000000000000000
           Size.Height = 27.000000000000000000
           Size.PlatformDefault = False
@@ -187,7 +187,7 @@ object frmStart: TfrmStart
         end
         object lblReceiptDateTime: TLabel
           Position.X = 120.000000000000000000
-          Position.Y = 160.000000000000000000
+          Position.Y = 200.000000000000000000
           Size.Width = 200.000000000000000000
           Size.Height = 30.000000000000000000
           Size.PlatformDefault = False
@@ -11759,8 +11759,8 @@ object frmStart: TfrmStart
         ReadOnly = False
       end>
     ScopeMappings = <>
-    Left = 312
-    Top = 272
+    Left = 104
+    Top = 464
   end
   object BindingsList1: TBindingsList
     Methods = <>
