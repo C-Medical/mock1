@@ -26,6 +26,7 @@ inherited frmInterview_LgXhdpiTb: TfrmInterview_LgXhdpiTb
         end
         inherited ProgressBar1: TProgressBar
           Size.Width = 360.000000000000000000
+          Size.Height = 25.000000000000000000
         end
       end
     end

@@ -1,4 +1,4 @@
-object frm1: Tfrm1
+object frm2: Tfrm2
   Size.Width = 400.000000000000000000
   Size.Height = 600.000000000000000000
   Size.PlatformDefault = False
@@ -31,7 +31,7 @@ object frm1: Tfrm1
       Size.Height = 90.000000000000000000
       Size.PlatformDefault = False
       TextSettings.Font.Size = 24.000000000000000000
-      Text = #30151#29366#12399#12356#12388#12363#12425#12391#12375#12423#12358#12363#65311
+      Text = #38957#30171#12399#12354#12426#12414#12377#12363#65311
     end
   end
   object FlowLayout1: TFlowLayout
@@ -52,12 +52,23 @@ object frm1: Tfrm1
     object RadioButton1: TRadioButton
       StyledSettings = [Family, Style, FontColor]
       GroupName = '1'
-      Position.X = 80.000000000000000000
-      Size.Width = 180.000000000000000000
+      Position.X = 45.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 24.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 8
+      Text = #12394#12375
+      TextSettings.Font.Size = 24.000000000000000000
+    end
+    object RadioButton2: TRadioButton
+      StyledSettings = [Family, Style, FontColor]
+      GroupName = '1'
+      Position.X = 175.000000000000000000
+      Size.Width = 120.000000000000000000
       Size.Height = 24.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 6
-      Text = #20170#26085
+      Text = #12354#12426
       TextSettings.Font.Size = 24.000000000000000000
     end
     object FlowLayoutBreak1: TFlowLayoutBreak
@@ -66,17 +77,14 @@ object frm1: Tfrm1
       JustifyLastLine = Left
       FlowDirection = LeftToRight
     end
-    object RadioButton2: TRadioButton
-      StyledSettings = [Family, Style, FontColor]
-      GroupName = '1'
-      Position.X = 80.000000000000000000
+    object Line1: TLine
+      LineType = Top
+      Position.X = 20.000000000000000000
       Position.Y = 42.000000000000000000
-      Size.Width = 180.000000000000000000
-      Size.Height = 24.000000000000000000
+      Size.Width = 300.000000000000000000
+      Size.Height = 23.000000000000000000
       Size.PlatformDefault = False
-      TabOrder = 1
-      Text = #26152#26085
-      TextSettings.Font.Size = 24.000000000000000000
+      Stroke.Dash = Dash
     end
     object FlowLayoutBreak2: TFlowLayoutBreak
       ChangesRules = False
@@ -87,13 +95,37 @@ object frm1: Tfrm1
     object RadioButton3: TRadioButton
       StyledSettings = [Family, Style, FontColor]
       GroupName = '1'
-      Position.X = 80.000000000000000000
-      Position.Y = 84.000000000000000000
-      Size.Width = 180.000000000000000000
+      Position.X = 45.000000000000000000
+      Position.Y = 85.000000000000000000
+      Size.Width = 120.000000000000000000
       Size.Height = 24.000000000000000000
       Size.PlatformDefault = False
-      TabOrder = 0
-      Text = #65298#26085#21069#12367#12425#12356
+      TabOrder = 13
+      Text = #12371#12417#12363#12415
+      TextSettings.Font.Size = 24.000000000000000000
+    end
+    object RadioButton4: TRadioButton
+      StyledSettings = [Family, Style, FontColor]
+      GroupName = '1'
+      Position.X = 175.000000000000000000
+      Position.Y = 85.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 24.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 9
+      Text = #29255#20596
+      TextSettings.Font.Size = 24.000000000000000000
+    end
+    object RadioButton5: TRadioButton
+      StyledSettings = [Family, Style, FontColor]
+      GroupName = '1'
+      Position.X = 110.000000000000000000
+      Position.Y = 127.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 24.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 7
+      Text = #20840#20307
       TextSettings.Font.Size = 24.000000000000000000
     end
     object FlowLayoutBreak3: TFlowLayoutBreak
@@ -102,70 +134,37 @@ object frm1: Tfrm1
       JustifyLastLine = Left
       FlowDirection = LeftToRight
     end
-    object RadioButton4: TRadioButton
-      StyledSettings = [Family, Style, FontColor]
-      GroupName = '1'
-      Position.X = 80.000000000000000000
-      Position.Y = 126.000000000000000000
-      Size.Width = 180.000000000000000000
-      Size.Height = 24.000000000000000000
+    object Line2: TLine
+      LineType = Top
+      Position.X = 20.000000000000000000
+      Position.Y = 169.000000000000000000
+      Size.Width = 300.000000000000000000
+      Size.Height = 23.000000000000000000
       Size.PlatformDefault = False
-      TabOrder = 2
-      Text = #65299#26085#21069#12367#12425#12356
-      TextSettings.Font.Size = 24.000000000000000000
-    end
-    object FlowLayoutBreak4: TFlowLayoutBreak
-      ChangesRules = False
-      Justify = Left
-      JustifyLastLine = Left
-      FlowDirection = LeftToRight
-    end
-    object RadioButton5: TRadioButton
-      StyledSettings = [Family, Style, FontColor]
-      GroupName = '1'
-      Position.X = 80.000000000000000000
-      Position.Y = 168.000000000000000000
-      Size.Width = 180.000000000000000000
-      Size.Height = 24.000000000000000000
-      Size.PlatformDefault = False
-      TabOrder = 4
-      Text = #65301#26085#21069#12367#12425#12356
-      TextSettings.Font.Size = 24.000000000000000000
-    end
-    object FlowLayoutBreak5: TFlowLayoutBreak
-      ChangesRules = False
-      Justify = Left
-      JustifyLastLine = Left
-      FlowDirection = LeftToRight
+      Stroke.Dash = Dash
     end
     object RadioButton6: TRadioButton
       StyledSettings = [Family, Style, FontColor]
       GroupName = '1'
-      Position.X = 80.000000000000000000
-      Position.Y = 210.000000000000000000
-      Size.Width = 180.000000000000000000
+      Position.X = 50.000000000000000000
+      Position.Y = 212.000000000000000000
+      Size.Width = 240.000000000000000000
       Size.Height = 24.000000000000000000
       Size.PlatformDefault = False
-      TabOrder = 3
-      Text = #65297#36913#38291#21069#12367#12425#12356
+      TabOrder = 12
+      Text = #33032#25171#12388#24863#12376
       TextSettings.Font.Size = 24.000000000000000000
-    end
-    object FlowLayoutBreak6: TFlowLayoutBreak
-      ChangesRules = False
-      Justify = Left
-      JustifyLastLine = Left
-      FlowDirection = LeftToRight
     end
     object RadioButton7: TRadioButton
       StyledSettings = [Family, Style, FontColor]
       GroupName = '1'
-      Position.X = 80.000000000000000000
-      Position.Y = 252.000000000000000000
-      Size.Width = 180.000000000000000000
+      Position.X = 50.000000000000000000
+      Position.Y = 254.000000000000000000
+      Size.Width = 240.000000000000000000
       Size.Height = 24.000000000000000000
       Size.PlatformDefault = False
-      TabOrder = 5
-      Text = #12418#12387#12392#21069#12363#12425
+      TabOrder = 11
+      Text = #32224#12417#20184#12369#12425#12428#12427#24863#12376
       TextSettings.Font.Size = 24.000000000000000000
     end
   end

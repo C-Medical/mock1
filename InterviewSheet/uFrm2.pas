@@ -1,29 +1,28 @@
-unit uFrm1;
+unit uFrm2;
 
 interface
 
 uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants, 
   FMX.Types, FMX.Graphics, FMX.Controls, FMX.Forms, FMX.Dialogs, FMX.StdCtrls,
-  FMX.Layouts;
+  FMX.Objects, FMX.Layouts;
 
 type
-  Tfrm1 = class(TFrame)
+  Tfrm2 = class(TFrame)
     CalloutPanel1: TCalloutPanel;
     Label1: TLabel;
     FlowLayout1: TFlowLayout;
     RadioButton1: TRadioButton;
-    FlowLayoutBreak1: TFlowLayoutBreak;
     RadioButton2: TRadioButton;
+    FlowLayoutBreak1: TFlowLayoutBreak;
+    Line1: TLine;
     FlowLayoutBreak2: TFlowLayoutBreak;
     RadioButton3: TRadioButton;
-    FlowLayoutBreak3: TFlowLayoutBreak;
     RadioButton4: TRadioButton;
-    FlowLayoutBreak4: TFlowLayoutBreak;
     RadioButton5: TRadioButton;
-    FlowLayoutBreak5: TFlowLayoutBreak;
+    FlowLayoutBreak3: TFlowLayoutBreak;
+    Line2: TLine;
     RadioButton6: TRadioButton;
-    FlowLayoutBreak6: TFlowLayoutBreak;
     RadioButton7: TRadioButton;
   private
     { private êÈåæ }

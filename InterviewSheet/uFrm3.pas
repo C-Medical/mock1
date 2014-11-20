@@ -1,4 +1,4 @@
-unit uFrm1;
+unit uFrm3;
 
 interface
 
@@ -8,23 +8,15 @@ uses
   FMX.Layouts;
 
 type
-  Tfrm1 = class(TFrame)
+  Tfrm3 = class(TFrame)
     CalloutPanel1: TCalloutPanel;
     Label1: TLabel;
     FlowLayout1: TFlowLayout;
     RadioButton1: TRadioButton;
-    FlowLayoutBreak1: TFlowLayoutBreak;
     RadioButton2: TRadioButton;
+    FlowLayoutBreak1: TFlowLayoutBreak;
     FlowLayoutBreak2: TFlowLayoutBreak;
     RadioButton3: TRadioButton;
-    FlowLayoutBreak3: TFlowLayoutBreak;
-    RadioButton4: TRadioButton;
-    FlowLayoutBreak4: TFlowLayoutBreak;
-    RadioButton5: TRadioButton;
-    FlowLayoutBreak5: TFlowLayoutBreak;
-    RadioButton6: TRadioButton;
-    FlowLayoutBreak6: TFlowLayoutBreak;
-    RadioButton7: TRadioButton;
   private
     { private êÈåæ }
   public
