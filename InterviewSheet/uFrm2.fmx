@@ -80,7 +80,7 @@ object frm2: Tfrm2
     object Line1: TLine
       LineType = Top
       Position.X = 20.000000000000000000
-      Position.Y = 42.000000000000000000
+      Position.Y = 44.000000000000000000
       Size.Width = 300.000000000000000000
       Size.Height = 23.000000000000000000
       Size.PlatformDefault = False
@@ -96,7 +96,7 @@ object frm2: Tfrm2
       StyledSettings = [Family, Style, FontColor]
       GroupName = '1'
       Position.X = 45.000000000000000000
-      Position.Y = 85.000000000000000000
+      Position.Y = 87.000000000000000000
       Size.Width = 120.000000000000000000
       Size.Height = 24.000000000000000000
       Size.PlatformDefault = False
@@ -108,7 +108,7 @@ object frm2: Tfrm2
       StyledSettings = [Family, Style, FontColor]
       GroupName = '1'
       Position.X = 175.000000000000000000
-      Position.Y = 85.000000000000000000
+      Position.Y = 87.000000000000000000
       Size.Width = 120.000000000000000000
       Size.Height = 24.000000000000000000
       Size.PlatformDefault = False
@@ -120,7 +120,7 @@ object frm2: Tfrm2
       StyledSettings = [Family, Style, FontColor]
       GroupName = '1'
       Position.X = 110.000000000000000000
-      Position.Y = 127.000000000000000000
+      Position.Y = 131.000000000000000000
       Size.Width = 120.000000000000000000
       Size.Height = 24.000000000000000000
       Size.PlatformDefault = False
@@ -137,7 +137,7 @@ object frm2: Tfrm2
     object Line2: TLine
       LineType = Top
       Position.X = 20.000000000000000000
-      Position.Y = 169.000000000000000000
+      Position.Y = 175.000000000000000000
       Size.Width = 300.000000000000000000
       Size.Height = 23.000000000000000000
       Size.PlatformDefault = False
@@ -147,7 +147,7 @@ object frm2: Tfrm2
       StyledSettings = [Family, Style, FontColor]
       GroupName = '1'
       Position.X = 50.000000000000000000
-      Position.Y = 212.000000000000000000
+      Position.Y = 218.000000000000000000
       Size.Width = 240.000000000000000000
       Size.Height = 24.000000000000000000
       Size.PlatformDefault = False
@@ -159,7 +159,7 @@ object frm2: Tfrm2
       StyledSettings = [Family, Style, FontColor]
       GroupName = '1'
       Position.X = 50.000000000000000000
-      Position.Y = 254.000000000000000000
+      Position.Y = 262.000000000000000000
       Size.Width = 240.000000000000000000
       Size.Height = 24.000000000000000000
       Size.PlatformDefault = False

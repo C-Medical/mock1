@@ -1,4 +1,4 @@
-object frm3: Tfrm3
+object frm4: Tfrm4
   Size.Width = 400.000000000000000000
   Size.Height = 600.000000000000000000
   Size.PlatformDefault = False
@@ -31,7 +31,7 @@ object frm3: Tfrm3
       Size.Height = 90.000000000000000000
       Size.PlatformDefault = False
       TextSettings.Font.Size = 24.000000000000000000
-      Text = #40763#27700#12399#20986#12414#12377#12363#65311
+      Text = #12379#12365#12399#20986#12414#12377#12363#65311
     end
   end
   object FlowLayout1: TFlowLayout
@@ -56,8 +56,8 @@ object frm3: Tfrm3
       Size.Width = 120.000000000000000000
       Size.Height = 24.000000000000000000
       Size.PlatformDefault = False
-      TabOrder = 8
-      Text = #12394#12375
+      TabOrder = 10
+      Text = #19968#26085#20013
       TextSettings.Font.Size = 24.000000000000000000
     end
     object RadioButton2: TRadioButton
@@ -68,7 +68,7 @@ object frm3: Tfrm3
       Size.Height = 24.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 6
-      Text = #12354#12426
+      Text = #36215#24202#26178
       TextSettings.Font.Size = 24.000000000000000000
     end
     object FlowLayoutBreak1: TFlowLayoutBreak
@@ -77,22 +77,40 @@ object frm3: Tfrm3
       JustifyLastLine = Left
       FlowDirection = LeftToRight
     end
-    object FlowLayoutBreak2: TFlowLayoutBreak
-      ChangesRules = False
-      Justify = Left
-      JustifyLastLine = Left
-      FlowDirection = LeftToRight
-    end
     object RadioButton3: TRadioButton
       StyledSettings = [Family, Style, FontColor]
       GroupName = '1'
-      Position.X = 110.000000000000000000
+      Position.X = 45.000000000000000000
       Position.Y = 44.000000000000000000
       Size.Width = 120.000000000000000000
       Size.Height = 24.000000000000000000
       Size.PlatformDefault = False
+      TabOrder = 9
+      Text = #26085#20013
+      TextSettings.Font.Size = 24.000000000000000000
+    end
+    object RadioButton4: TRadioButton
+      StyledSettings = [Family, Style, FontColor]
+      GroupName = '1'
+      Position.X = 175.000000000000000000
+      Position.Y = 44.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 24.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 8
+      Text = #23601#23517#26178
+      TextSettings.Font.Size = 24.000000000000000000
+    end
+    object RadioButton5: TRadioButton
+      StyledSettings = [Family, Style, FontColor]
+      GroupName = '1'
+      Position.X = 110.000000000000000000
+      Position.Y = 88.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 24.000000000000000000
+      Size.PlatformDefault = False
       TabOrder = 7
-      Text = #40763#12389#12414#12426
+      Text = #22812#20013
       TextSettings.Font.Size = 24.000000000000000000
     end
   end

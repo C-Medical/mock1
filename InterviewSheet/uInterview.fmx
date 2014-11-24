@@ -108,35 +108,35 @@ object frmInterview: TfrmInterview
           end
           inherited RadioButton2: TRadioButton
             Position.X = 18.500000000000000000
-            Position.Y = 42.000000000000000000
+            Position.Y = 44.000000000000000000
           end
           inherited Line1: TLine
             Position.X = -71.500000000000000000
-            Position.Y = 84.000000000000000000
+            Position.Y = 88.000000000000000000
           end
           inherited RadioButton3: TRadioButton
             Position.X = 18.500000000000000000
-            Position.Y = 127.000000000000000000
+            Position.Y = 131.000000000000000000
           end
           inherited RadioButton4: TRadioButton
             Position.X = 18.500000000000000000
-            Position.Y = 169.000000000000000000
+            Position.Y = 175.000000000000000000
           end
           inherited RadioButton5: TRadioButton
             Position.X = 18.500000000000000000
-            Position.Y = 211.000000000000000000
+            Position.Y = 219.000000000000000000
           end
           inherited Line2: TLine
             Position.X = -71.500000000000000000
-            Position.Y = 253.000000000000000000
+            Position.Y = 263.000000000000000000
           end
           inherited RadioButton6: TRadioButton
             Position.X = -41.500000000000000000
-            Position.Y = 296.000000000000000000
+            Position.Y = 306.000000000000000000
           end
           inherited RadioButton7: TRadioButton
             Position.X = -41.500000000000000000
-            Position.Y = 338.000000000000000000
+            Position.Y = 350.000000000000000000
           end
         end
       end
@@ -161,11 +161,48 @@ object frmInterview: TfrmInterview
           end
           inherited RadioButton2: TRadioButton
             Position.X = 10.500000000000000000
-            Position.Y = 42.000000000000000000
+            Position.Y = 44.000000000000000000
           end
           inherited RadioButton3: TRadioButton
             Position.X = 10.500000000000000000
-            Position.Y = 84.000000000000000000
+            Position.Y = 88.000000000000000000
+          end
+        end
+      end
+      inline frm4: Tfrm4
+        Position.X = 40.000000000000000000
+        Position.Y = 264.000000000000000000
+        Size.Width = 193.000000000000000000
+        Size.Height = 96.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        inherited CalloutPanel1: TCalloutPanel
+          Size.Width = 113.000000000000000000
+          inherited Label1: TLabel
+            Size.Width = 73.000000000000000000
+          end
+        end
+        inherited FlowLayout1: TFlowLayout
+          Size.Width = 133.000000000000000000
+          Size.Height = 0.000000000000000000
+          inherited RadioButton1: TRadioButton
+            Position.X = 6.500000000000000000
+          end
+          inherited RadioButton2: TRadioButton
+            Position.X = 6.500000000000000000
+            Position.Y = 44.000000000000000000
+          end
+          inherited RadioButton3: TRadioButton
+            Position.X = 6.500000000000000000
+            Position.Y = 88.000000000000000000
+          end
+          inherited RadioButton4: TRadioButton
+            Position.X = 6.500000000000000000
+            Position.Y = 132.000000000000000000
+          end
+          inherited RadioButton5: TRadioButton
+            Position.X = 6.500000000000000000
+            Position.Y = 176.000000000000000000
           end
         end
       end
@@ -205,6 +242,7 @@ object frmInterview: TfrmInterview
         TextSettings.Font.Size = 24.000000000000000000
         TextSettings.Font.Style = [fsBold]
         TextSettings.FontColor = claNavy
+        OnClick = btnBackClick
       end
       object Layout2: TLayout
         Align = Top

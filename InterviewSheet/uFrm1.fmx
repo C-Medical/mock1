@@ -70,7 +70,7 @@ object frm1: Tfrm1
       StyledSettings = [Family, Style, FontColor]
       GroupName = '1'
       Position.X = 80.000000000000000000
-      Position.Y = 42.000000000000000000
+      Position.Y = 44.000000000000000000
       Size.Width = 180.000000000000000000
       Size.Height = 24.000000000000000000
       Size.PlatformDefault = False
@@ -88,7 +88,7 @@ object frm1: Tfrm1
       StyledSettings = [Family, Style, FontColor]
       GroupName = '1'
       Position.X = 80.000000000000000000
-      Position.Y = 84.000000000000000000
+      Position.Y = 88.000000000000000000
       Size.Width = 180.000000000000000000
       Size.Height = 24.000000000000000000
       Size.PlatformDefault = False
@@ -106,7 +106,7 @@ object frm1: Tfrm1
       StyledSettings = [Family, Style, FontColor]
       GroupName = '1'
       Position.X = 80.000000000000000000
-      Position.Y = 126.000000000000000000
+      Position.Y = 132.000000000000000000
       Size.Width = 180.000000000000000000
       Size.Height = 24.000000000000000000
       Size.PlatformDefault = False
@@ -124,7 +124,7 @@ object frm1: Tfrm1
       StyledSettings = [Family, Style, FontColor]
       GroupName = '1'
       Position.X = 80.000000000000000000
-      Position.Y = 168.000000000000000000
+      Position.Y = 176.000000000000000000
       Size.Width = 180.000000000000000000
       Size.Height = 24.000000000000000000
       Size.PlatformDefault = False
@@ -142,7 +142,7 @@ object frm1: Tfrm1
       StyledSettings = [Family, Style, FontColor]
       GroupName = '1'
       Position.X = 80.000000000000000000
-      Position.Y = 210.000000000000000000
+      Position.Y = 220.000000000000000000
       Size.Width = 180.000000000000000000
       Size.Height = 24.000000000000000000
       Size.PlatformDefault = False
@@ -160,7 +160,7 @@ object frm1: Tfrm1
       StyledSettings = [Family, Style, FontColor]
       GroupName = '1'
       Position.X = 80.000000000000000000
-      Position.Y = 252.000000000000000000
+      Position.Y = 264.000000000000000000
       Size.Width = 180.000000000000000000
       Size.Height = 24.000000000000000000
       Size.PlatformDefault = False

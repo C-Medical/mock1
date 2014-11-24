@@ -132,6 +132,15 @@
             <FormType>fmx</FormType>
             <DesignClass>TFrame</DesignClass>
         </DCCReference>
+        <DCCReference Include="uFrm4.pas">
+            <Form>frm4</Form>
+            <FormType>fmx</FormType>
+            <DesignClass>TFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="uConfirm.pas">
+            <Form>frmConfirm</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
         <RcItem Include="..\Styles\Android\AndroidDark.fsf">
             <ContainerId>ResourceItem</ContainerId>
             <ResourceType>RCDATA</ResourceType>
